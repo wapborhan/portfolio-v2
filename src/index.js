@@ -1,19 +1,27 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./components/css/plugins/font-awesome.min.css";
-import "./components/css/style.css";
-import App from "./App";
+import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Preloader from "./components/Preloader/Preloader";
+// fancybox
+import "./assets/css/fancybox.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+// swiper
+import "swiper/css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+// stylesheets
+import "./assets/css/colors/yellow.css";
+import "./assets/css/styles.css";
+
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Preloader />
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
