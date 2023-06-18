@@ -75,7 +75,7 @@ export default function App() {
               {/* scroll frame */}
               <Scrollbar
                 className="content-scrollbar"
-                damping={0.5}
+                damping={0.1}
                 thumbMinSize={20}
                 renderByPixels={true}
                 alwaysShowTracks={false}

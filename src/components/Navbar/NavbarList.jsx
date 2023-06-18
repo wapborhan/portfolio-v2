@@ -1,5 +1,6 @@
 import React from "react";
 import NavbarListItem from "./NavbarListItem";
+import LangBar from "./LangBar";
 
 export default function NavbarList(props) {
   return (
@@ -17,6 +18,7 @@ export default function NavbarList(props) {
           ))}
         </ul>
       </nav>
+      <LangBar />
     </div>
   );
 }

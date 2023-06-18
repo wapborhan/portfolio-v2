@@ -1,15 +1,20 @@
-import React from 'react';
-import Logos from './Logos/Logos';
+import React from "react";
+import Logos from "./Logos/Logos";
 
 export default function Footer(props) {
   const date = new Date();
   return (
     <>
       <Logos data={props.data} />
-      <div className='container-fluid'>
+      <div className="container-fluid">
         <footer>
-          <div>&#169; {date.getFullYear()} Nulla a lobortis diam</div>
-          <div>Porta placerat magna</div>
+          <div>&#169; {date.getFullYear()} WapBorhan</div>
+          <div>
+            Developed by{" "}
+            <a className="text-underline" href="https://srdreamlab.com">
+              SR DreamLab
+            </a>
+          </div>
         </footer>
       </div>
     </>

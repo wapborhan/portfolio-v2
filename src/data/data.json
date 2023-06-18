@@ -1,10 +1,10 @@
 {
   "sidebar": {
     "profile": {
-      "name": "Lorem Ipsum",
-      "subtitle": ["Consectetur adipiscing elit,", "Dolor sit amet"],
+      "name": "Borhan Uddin",
+      "subtitle": ["Front-End Developer,", "SR Dream Lab"],
       "available": true,
-      "avatar": "/images/bitmoji/smile.png"
+      "avatar": "/images/bitmoji/wb-logo.png"
     },
 
     "about": [
@@ -18,11 +18,11 @@
         { "id": "2", "language": "French", "level": 20 }
       ],
       "hard": [
-        { "id": "1", "skill": "HTML5", "level": 85 },
-        { "id": "2", "skill": "CSS3", "level": 40 },
-        { "id": "3", "skill": "JavaScript", "level": 70 },
-        { "id": "4", "skill": "ReactJS", "level": 60 },
-        { "id": "5", "skill": "NodeJS", "level": 60 }
+        { "id": "1", "skill": "JavaScript", "level": 85 },
+        { "id": "2", "skill": "ReactJS", "level": 40 },
+        { "id": "3", "skill": "NodeJS", "level": 70 },
+        { "id": "4", "skill": "PHP", "level": 60 },
+        { "id": "5", "skill": "Wordpress", "level": 60 }
       ],
       "soft": [
         "React Hooks, Redux, jQuery",
@@ -190,7 +190,7 @@
 
   "main": {
     "banner": {
-      "heading": ["hi.", "welcome."],
+      "heading": ["Hi this is", "Borhan Uddin."],
 
       "avatar": "/images/bitmoji/side-wave.png",
 

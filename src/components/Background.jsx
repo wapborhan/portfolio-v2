@@ -7,7 +7,7 @@ export default function Background(props) {
       className="art-top-bg"
       style={{
         // backgroundImage: 'url(' + process.env.PUBLIC_URL + props.background.current + ')',
-        backgroundImage: "url(/images/backgrounds/tunnel.gif)"
+        backgroundImage: "url(/images/backgrounds/bg.jpg)",
       }}
     >
       {/* overlay */}
