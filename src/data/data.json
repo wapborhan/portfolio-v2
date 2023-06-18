@@ -8,21 +8,22 @@
     },
 
     "about": [
-      { "id": 1, "title": "Sed non", "subtitle": "Elit aliquet" },
-      { "id": 2, "title": "Aliquam tortor", "subtitle": "Sit amet" }
+      { "id": 1, "title": "Mobile", "subtitle": "+880 1620 557 840" },
+      { "id": 2, "title": "Email", "subtitle": "borhaninfos@gmail.com" },
+      { "id": 3, "title": "Address", "subtitle": "Kushtia, Khulna, Bangladesh" }
     ],
 
     "skills": {
       "languages": [
-        { "id": "1", "language": "English", "level": 100 },
-        { "id": "2", "language": "French", "level": 20 }
+        { "id": "1", "language": "MongoDB", "level": 40 },
+        { "id": "2", "language": "Express", "level": 50 },
+        { "id": "3", "language": "React", "level": 65 },
+        { "id": "4", "language": "NodeJS", "level": 20 }
       ],
       "hard": [
-        { "id": "1", "skill": "JavaScript", "level": 85 },
-        { "id": "2", "skill": "ReactJS", "level": 40 },
-        { "id": "3", "skill": "NodeJS", "level": 70 },
-        { "id": "4", "skill": "PHP", "level": 60 },
-        { "id": "5", "skill": "Wordpress", "level": 60 }
+        { "id": "1", "skill": "Bangla", "level": 85 },
+        { "id": "2", "skill": "English", "level": 40 },
+        { "id": "3", "skill": "Hindee", "level": 70 }
       ],
       "soft": [
         "React Hooks, Redux, jQuery",
@@ -195,20 +196,19 @@
       "avatar": "/images/bitmoji/side-wave.png",
 
       "typed": [
-        "Hello Wor- No...",
-        "I like to make websites.",
-        "Also web applications.",
-        "I do other stuff as well.",
-        "... but mostly not relevant."
+        "Front-End Developer.",
+        "Wordpress Developer.",
+        "App Developer."
       ],
 
-      "button": { "text": "beam me up scotty", "url": "" }
+      "button": { "text": "Explore More", "url": "" }
     },
 
     "counters": [
       { "id": 1, "number": 2, "text": "Years Experience" },
       { "id": 2, "number": 3, "text": "Certificates" },
-      { "id": 3, "number": 15, "text": "Completed Projects" }
+      { "id": 3, "number": 25, "text": "Completed Projects" },
+      { "id": 4, "number": 11, "text": "Completed " }
     ],
 
     "history": [

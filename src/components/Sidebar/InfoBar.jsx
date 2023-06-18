@@ -41,7 +41,7 @@ export default function ArtInfoBar(props) {
 
         <Scrollbar
           id="info-bar-scrollbar"
-          damping={0.5}
+          damping={0.1}
           thumbMinSize={20}
           renderByPixels={true}
           alwaysShowTracks={false}

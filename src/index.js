@@ -7,9 +7,8 @@ import Preloader from "./components/Preloader/Preloader";
 // fancybox
 import "./assets/css/fancybox.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// swiper
 import "swiper/css";
-
+import "./assets/css/plugins/font-awesome.min.css";
 // stylesheets
 import "./assets/css/colors/yellow.css";
 import "./assets/css/styles.css";
