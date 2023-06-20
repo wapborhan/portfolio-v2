@@ -12,7 +12,7 @@ export default function Footer(props) {
           <div>
             Developed by{" "}
             <a className="text-underline" href="https://srdreamlab.com">
-              SR DreamLab
+              SR Dream Lab
             </a>
           </div>
         </footer>

@@ -7,7 +7,7 @@ const LangBar = () => {
     const newValue = !isDark;
     setDark(newValue);
     localStorage.setItem(darkMode, newValue.toString());
-    document.body.classList.toggle("white-version");
+    // document.body.classList.toggle("white-version");
   };
 
   useEffect(() => {

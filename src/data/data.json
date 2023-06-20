@@ -100,33 +100,19 @@
 
   "navbar": [
     { "id": 0, "title": "Home", "subMenu": false, "path": "/" },
+    { "id": 5, "title": "About", "subMenu": false, "path": "/about" },
     {
       "id": 1,
       "title": "Projects",
-      "subMenu": [
-        {
-          "title": "Projects",
-          "subtitle": "2 Columns",
-          "path": "/projects-2-col"
-        },
-        {
-          "title": "Projects",
-          "subtitle": "3 Columns",
-          "path": "/projects-3-col"
-        }
-      ]
+      "path": "/Projects"
     },
-    { "id": 2, "title": "History", "subMenu": false, "path": "/history" },
-    { "id": 3, "title": "Courses", "subMenu": false, "path": "/courses" },
+
     {
       "id": 4,
       "title": "Blog",
-      "subMenu": [
-        { "title": "Blog", "subtitle": "2 Column", "path": "/blog-2-col" },
-        { "title": "Blog", "subtitle": "3 Column", "path": "/blog-3-col" }
-      ]
+      "path": "/blog-3-col"
     },
-    { "id": 5, "title": "About", "subMenu": false, "path": "/about" },
+
     { "id": 6, "title": "Contact", "subMenu": false, "path": "/contact" }
   ],
 
@@ -201,14 +187,19 @@
         "App Developer."
       ],
 
-      "button": { "text": "Explore More", "url": "" }
+      "button": { "text": "Explore More", "url": "/about" }
     },
 
     "counters": [
-      { "id": 1, "number": 2, "text": "Years Experience" },
-      { "id": 2, "number": 3, "text": "Certificates" },
-      { "id": 3, "number": 25, "text": "Completed Projects" },
-      { "id": 4, "number": 11, "text": "Completed " }
+      { "id": 1, "number": 2, "text": "Years Experience", "properties": "+" },
+      { "id": 2, "number": 3, "text": "Certificates", "properties": "" },
+      {
+        "id": 3,
+        "number": 25,
+        "text": "Completed Projects",
+        "properties": "+"
+      },
+      { "id": 4, "number": 10, "text": "Happy Customers ", "properties": "+" }
     ],
 
     "history": [

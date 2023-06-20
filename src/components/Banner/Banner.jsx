@@ -1,5 +1,6 @@
 import React from "react";
 import Code from "./Code";
+import { NavLink } from "react-router-dom";
 import { rng } from "../../assets/js/main.js";
 
 export default function Banner(props) {
@@ -34,25 +35,26 @@ export default function Banner(props) {
                     <span>{props.data.button.text}</span>
                   </a> */}
                   {/* button v2 (a div with onclick) */}
-                  <div
+                  <NavLink
                     className="art-btn art-btn-md btn-v2"
-                    onClick={() => {
-                      // to not get the same image, compare it to the index
-                      // if they are the same, randomize it again until its not the same
-                      let i;
-                      do {
-                        i = rng(0, props.background.total - 1);
-                      } while (i === props.background.index);
-                      // change background after the new image index is different
-                      props.setBackground({
-                        ...props.background,
-                        current: props.background.all[i],
-                        index: i
-                      });
-                    }}
+                    to={props.data.button.url}
+                    // onClick={() => {
+                    //   // to not get the same image, compare it to the index
+                    //   // if they are the same, randomize it again until its not the same
+                    //   let i;
+                    //   do {
+                    //     i = rng(0, props.background.total - 1);
+                    //   } while (i === props.background.index);
+                    //   // change background after the new image index is different
+                    //   props.setBackground({
+                    //     ...props.background,
+                    //     current: props.background.all[i],
+                    //     index: i
+                    //   });
+                    // }}
                   >
                     <span>{props.data.button.text}</span>
-                  </div>
+                  </NavLink>
                 </div>
               </div>
               {/* avatar */}

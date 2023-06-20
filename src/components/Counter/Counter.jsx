@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 export default function Counter(props) {
   // animation (fade-in & count increase)
   //useEffect(counterAnimation, []);
-
+  console.log(props);
   return (
     <div
       className={
@@ -16,6 +16,7 @@ export default function Counter(props) {
         <div className="art-counter-box">
           <span id={"art-counter-" + props.id} className="art-counter">
             <CountUp end={props.number} duration={5} delay={2.5} />
+            <div className="art-counter-plus">{props.properties}</div>
           </span>
         </div>
         <h6>{props.text}</h6>

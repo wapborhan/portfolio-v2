@@ -14,37 +14,49 @@ import NotFound from "../views/NotFound";
 export default function App(props) {
   return (
     <Routes>
-      {/* <Route exact path="/projects" Component={        <ProjectsPage data={props.data.projects} />}>
+      <Route
+        exact
+        path="/projects"
+        element={<ProjectsPage data={props.data.projects} />}
+      />
 
-      </Route> */}
+      <Route
+        exact
+        path="/projects-2-col"
+        element={<ProjectsPage data={props.data.projects} column={2} />}
+      />
 
-      {/* <Route exact path="/projects-2-col">
-        <ProjectsPage data={props.data.projects} column={2} />
-      </Route> */}
+      <Route
+        exact
+        path="/projects-3-col"
+        element={<ProjectsPage data={props.data.projects} column={3} />}
+      />
 
-      {/* <Route exact path="/projects-3-col">
-        <ProjectsPage data={props.data.projects} column={3} />
-      </Route> */}
+      <Route
+        exact
+        path="/history"
+        element={<HistoryPage data={props.data.history} />}
+      />
 
-      {/* <Route exact path="/history">
-        <HistoryPage data={props.data.history} />
-      </Route> */}
+      <Route
+        exact
+        path="/courses"
+        element={<CoursePage data={props.data.courses} />}
+      />
 
-      {/* <Route exact path="/courses">
-        <CoursePage data={props.data.courses} />
-      </Route> */}
+      <Route exact path="/blog" element={<BlogPage data={props.data.blog} />} />
 
-      {/* <Route exact path="/blog">
-        <BlogPage data={props.data.blog} />
-      </Route> */}
+      <Route
+        exact
+        path="/blog-2-col"
+        element={<BlogPage data={props.data.blog} column={2} />}
+      />
 
-      {/* <Route exact path="/blog-2-col">
-        <BlogPage data={props.data.blog} column={2} />
-      </Route> */}
-
-      {/* <Route exact path="/blog-3-col">
-        <BlogPage data={props.data.blog} column={3} />
-      </Route> */}
+      <Route
+        exact
+        path="/blog-3-col"
+        element={<BlogPage data={props.data.blog} column={3} />}
+      />
 
       <Route
         exact
