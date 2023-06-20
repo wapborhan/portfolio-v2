@@ -2,15 +2,32 @@
   "sidebar": {
     "profile": {
       "name": "Borhan Uddin",
-      "subtitle": ["Front-End Developer,", "SR Dream Lab"],
+      "designation": "Front-End Developer",
+      "company": "SR Dream Lab",
+      "companylink": "http://www.srdreamlab.com",
       "available": true,
       "avatar": "/images/bitmoji/wb-logo.png"
     },
 
     "about": [
-      { "id": 1, "title": "Mobile", "subtitle": "+880 1620 557 840" },
-      { "id": 2, "title": "Email", "subtitle": "borhaninfos@gmail.com" },
-      { "id": 3, "title": "Address", "subtitle": "Kushtia, Khulna, Bangladesh" }
+      {
+        "id": 1,
+        "title": "Mobile",
+        "subtitle": "+880 1620 557 840",
+        "link": "https://api.whatsapp.com/send?phone=8801620557840&text=Hello"
+      },
+      {
+        "id": 2,
+        "title": "Email",
+        "subtitle": "borhaninfos@gmail.com",
+        "link": "mailto:borhaninfos@gmail.com"
+      },
+      {
+        "id": 3,
+        "title": "Address",
+        "subtitle": "Kushtia, Khulna, Bangladesh",
+        "link": "https://goo.gl/maps/MA7zFUaa29n3J6JA6"
+      }
     ],
 
     "skills": {

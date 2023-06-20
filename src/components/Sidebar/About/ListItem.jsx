@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
 export default function ListItem(props) {
   return (
     <li>
       <h6>{props.title}</h6>
-      <span>{props.subtitle}</span>
+      <a href={props.link} target="__BLANK">
+        <span>{props.subtitle}</span>
+      </a>
     </li>
   );
 }
