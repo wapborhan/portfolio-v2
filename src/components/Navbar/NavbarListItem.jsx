@@ -38,10 +38,10 @@ export default function NavbarListItem(props) {
       <NavLink
         exact
         to={props.item.path}
-        activeClassName="selected"
-        activeStyle={{
+        activeclassname="selected"
+        activestyle={{
           color: "#fff",
-          textShadow: "0 0 3px var(--color-text-shadow-0)"
+          textShadow: "0 0 3px var(--color-text-shadow-0)",
         }}
         onClick={(e) => {
           // if the current link items path is the current pathname

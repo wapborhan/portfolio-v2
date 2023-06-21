@@ -195,9 +195,7 @@
   "main": {
     "banner": {
       "heading": ["Hi this is", "Borhan Uddin."],
-
       "avatar": "/images/bitmoji/side-wave.png",
-
       "typed": [
         "Front-End Developer.",
         "Wordpress Developer.",
@@ -802,6 +800,75 @@
       "/images/bitmoji/dont-touch-your-face.png",
       "/images/bitmoji/wash-your-hands.png",
       "/images/bitmoji/sanitize.png"
-    ]
+    ],
+    "skills": {
+      "secondray": [
+        { "id": "1", "language": "MongoDB", "icon": 40 },
+        { "id": "2", "language": "Express", "icon": 50 },
+        { "id": "3", "language": "React", "icon": 65 },
+        { "id": "4", "language": "NodeJS", "icon": 20 }
+      ],
+      "tools": [
+        { "id": "1", "language": "MongoDB", "icon": 40 },
+        { "id": "2", "language": "Express", "icon": 50 },
+        { "id": "3", "language": "React", "icon": 65 },
+        { "id": "4", "language": "NodeJS", "icon": 20 }
+      ]
+    },
+    "why": {
+      "title": "Why Me?",
+      "righttitle": {
+        "text": "Explore More",
+        "link": "/why"
+      },
+      "posts": [
+        {
+          "id": 1,
+          "title": "Always On Time",
+          "overview": "I will delivery your project on time so that you can start your business with your previous plan."
+        },
+        {
+          "id": 2,
+          "title": "Hard Working",
+          "overview": "I am a hard working person who always works hard for his clients. So, there is no way to delay."
+        },
+        {
+          "id": 3,
+          "title": "24/7 Availability",
+          "overview": "I am here to help you always. If you are facing any kind of problem than you can contact me 24/7."
+        },
+        {
+          "id": 4,
+          "title": "Professional Work",
+          "overview": "I am a Professional Web Designer and Developer. So, I always here to design your website professionally."
+        },
+        {
+          "id": 5,
+          "title": "Speed Optimization",
+          "overview": "I wil optimize speed of your website around 90 in all page speed tools with plugins or manually."
+        },
+        {
+          "id": 6,
+          "title": "100% Satisfaction",
+          "overview": "I always take correct ions from clients before submitting project and work as a way of the most satisfaction."
+        },
+        {
+          "id": 7,
+          "title": "After Selling Support",
+          "overview": "I will provide after selling support. The support will not be paid but if there is any big issue you may charge for solution."
+        },
+
+        {
+          "id": 8,
+          "title": "Contact form Setup",
+          "overview": "I will set your contact form so that people can reach you via Email. I will use Contact form 7 or WP form."
+        },
+        {
+          "id": 9,
+          "title": "High Security",
+          "overview": "Security is one of the most important issue for a website. So, I always work carefully to protect your website properly."
+        }
+      ]
+    }
   }
 }

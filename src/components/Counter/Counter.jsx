@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 export default function Counter(props) {
   // animation (fade-in & count increase)
   //useEffect(counterAnimation, []);
-  console.log(props);
+
   return (
     <div
       className={

@@ -6,6 +6,7 @@ import History from "../components/History/History";
 import ProjectsSwiper from "../components/Projects/ProjectsSwiper";
 import BlogSwiper from "../components/Blog/BlogSwiper";
 import Contact from "../components/Contact/Contact";
+import WhyMe from "../components/why/WhyMe";
 
 export default function HomePage(props) {
   return (
@@ -20,15 +21,17 @@ export default function HomePage(props) {
       {/* counters */}
       <Counters data={props.data.counters} />
       {/* Skils */}
-      <Skills />
+      <Skills data={props.data.skills} />
       {/* projects */}
-      <ProjectsSwiper data={props.data.projects} />
+      {/* <ProjectsSwiper data={props.data.projects} /> */}
 
       {/* education history */}
-      <History data={props.data.history} />
+      {/* <History data={props.data.history} /> */}
 
       {/* newsletter / posts */}
-      <BlogSwiper data={props.data.blog} />
+      {/* <BlogSwiper data={props.data.blog} /> */}
+      {/* why me / posts */}
+      <WhyMe data={props.data.why} column={3} />
 
       {/* contact info */}
       <Contact data={props.data.contact} />

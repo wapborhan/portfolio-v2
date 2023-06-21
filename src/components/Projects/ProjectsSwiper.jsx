@@ -1,9 +1,9 @@
-import React from 'react';
-import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import ProjectCard from './ProjectCard';
-import SectionTitle from '../Templates/Text/SectionTitle';
-import SwiperNavigation from '../Templates/Swiper/SwiperNavigation';
+import React from "react";
+import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ProjectCard from "./ProjectCard";
+import SectionTitle from "../Templates/Text/SectionTitle";
+import SwiperNavigation from "../Templates/Swiper/SwiperNavigation";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
@@ -12,13 +12,13 @@ export default function ProjectsSwiper(props) {
   SwiperCore.use([Autoplay]); // start autoplay
 
   return (
-    <div className='container-fluid'>
-      <div className='row p-30-0'>
+    <div className="container-fluid">
+      <div className="row p-30-0">
         {/* title */}
-        <SectionTitle title='Projects' />
+        <SectionTitle title="Projects" />
 
         {/* project items  */}
-        <div className={'col-lg-12'}>
+        <div className={"col-lg-12"}>
           <Swiper
             spaceBetween={30}
             slidesPerView={3}
@@ -56,18 +56,32 @@ export default function ProjectsSwiper(props) {
                 spaceBetween: 30,
               },
             }}
-            navigation={{ nextEl: '.art-project-swiper-next', prevEl: '.art-project-swiper-prev' }}
-            pagination={{ el: '.project-swiper-pagination', type: 'bullets', clickable: true }}
+            navigation={{
+              nextEl: ".art-project-swiper-next",
+              prevEl: ".art-project-swiper-prev",
+            }}
+            pagination={{
+              el: ".project-swiper-pagination",
+              type: "bullets",
+              clickable: true,
+            }}
           >
             {props.data.projects.map((p) => (
-              <SwiperSlide key={p.id} className='swiper-slide art-grid art-grid-3-col art-gallery'>
-                <ProjectCard key={p.id} project={p} class=' art-project-swiper-card' />
+              <SwiperSlide
+                key={p.id}
+                className="swiper-slide art-grid art-grid-3-col art-gallery"
+              >
+                <ProjectCard
+                  key={p.id}
+                  project={p}
+                  className=" art-project-swiper-card"
+                />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
 
-        <SwiperNavigation section='project' />
+        <SwiperNavigation section="project" />
       </div>
     </div>
   );

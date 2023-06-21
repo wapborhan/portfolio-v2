@@ -2821,11 +2821,13 @@ html.is-animating .fade-left {
 
 .rightskills {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   position: relative;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   transition: 1s;
+  margin-bottom: 20px;
 }
 
 .each {
@@ -2852,7 +2854,7 @@ html.is-animating .fade-left {
   width: 100px;
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  border: 3px px solid var(--bg-blog-1);
+  border: 3px solid var(--color-text-shadow-1);
 }
 .skills:hover .each {
   box-shadow: inset 4px 4px 7px rgba(55, 84, 170, 0.15),
@@ -2870,11 +2872,11 @@ html.is-animating .fade-left {
 }
 
 .js .box {
-  margin-top: 40px;
+  margin-top: 75px;
 }
 
 .ng .box {
-  margin-top: 40px;
+  margin-top: 75px;
   text-align: right;
 }
 

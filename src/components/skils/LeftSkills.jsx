@@ -6,10 +6,10 @@ const LeftSkills = () => {
   return (
     <>
       <SectionTitle title="Primary Skills On" />
-      <div class="skills">
-        <div class="each html">
-          <div class="box">
-            <div class="content">
+      <div className="skills">
+        <div className="each html">
+          <div className="box">
+            <div className="content">
               <h2>MongoDB</h2>
               <i>
                 <SiMongodb />
@@ -17,9 +17,9 @@ const LeftSkills = () => {
             </div>
           </div>
         </div>
-        <div class="each css">
-          <div class="box">
-            <div class="content">
+        <div className="each css">
+          <div className="box">
+            <div className="content">
               <h2>ExpressJS</h2>
               <i>
                 <SiExpress />
@@ -27,14 +27,14 @@ const LeftSkills = () => {
             </div>
           </div>
         </div>
-        <div class="center">
-          <div class="box">
+        <div className="center">
+          <div className="box">
             <h2>MERN</h2>
           </div>
         </div>
-        <div class="each js">
-          <div class="box">
-            <div class="content">
+        <div className="each js">
+          <div className="box">
+            <div className="content">
               <i>
                 <SiReact />
               </i>
@@ -42,9 +42,9 @@ const LeftSkills = () => {
             </div>
           </div>
         </div>
-        <div class="each ng">
-          <div class="box">
-            <div class="content">
+        <div className="each ng">
+          <div className="box">
+            <div className="content">
               <i>
                 <SiNodedotjs />
               </i>

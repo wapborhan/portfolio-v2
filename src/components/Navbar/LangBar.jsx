@@ -26,7 +26,11 @@ const LangBar = () => {
     <ul className="art-language-change">
       <li>
         <a style={{ cursor: "pointer" }} onClick={toggleDark}>
-          {!isDark ? <i class="far fa-sun"></i> : <i class="fas fa-moon"></i>}
+          {!isDark ? (
+            <i className="far fa-sun"></i>
+          ) : (
+            <i className="fas fa-moon"></i>
+          )}
         </a>
       </li>
       <br />
