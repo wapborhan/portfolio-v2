@@ -1,20 +1,26 @@
-import React from 'react';
-import Banner from '../components/Banner/Banner';
-import Counters from '../components/Counter/Counters';
-import History from '../components/History/History';
-import ProjectsSwiper from '../components/Projects/ProjectsSwiper';
-import BlogSwiper from '../components/Blog/BlogSwiper';
-import Contact from '../components/Contact/Contact';
+import React from "react";
+import Skills from "../components/skils/Skills";
+import Banner from "../components/Banner/Banner";
+import Counters from "../components/Counter/Counters";
+import History from "../components/History/History";
+import ProjectsSwiper from "../components/Projects/ProjectsSwiper";
+import BlogSwiper from "../components/Blog/BlogSwiper";
+import Contact from "../components/Contact/Contact";
 
 export default function HomePage(props) {
   return (
     <>
       {/* heading for banner */}
-      <Banner background={props.background} setBackground={props.setBackground} data={props.data.banner} />
+      <Banner
+        background={props.background}
+        setBackground={props.setBackground}
+        data={props.data.banner}
+      />
 
       {/* counters */}
       <Counters data={props.data.counters} />
-
+      {/* Skils */}
+      <Skills />
       {/* projects */}
       <ProjectsSwiper data={props.data.projects} />
 
