@@ -803,16 +803,16 @@
     ],
     "skills": {
       "secondray": [
-        { "id": "1", "language": "MongoDB", "icon": 40 },
-        { "id": "2", "language": "Express", "icon": 50 },
-        { "id": "3", "language": "React", "icon": 65 },
-        { "id": "4", "language": "NodeJS", "icon": 20 }
+        { "id": "1", "language": "MongoDB", "icon": "SiMongodb" },
+        { "id": "2", "language": "Express", "icon": "SiMongodb" },
+        { "id": "3", "language": "React", "icon": "SiMongodb" },
+        { "id": "4", "language": "NodeJS", "icon": "SiMongodb" }
       ],
       "tools": [
-        { "id": "1", "language": "MongoDB", "icon": 40 },
-        { "id": "2", "language": "Express", "icon": 50 },
-        { "id": "3", "language": "React", "icon": 65 },
-        { "id": "4", "language": "NodeJS", "icon": 20 }
+        { "id": "1", "language": "MongoDB", "icon": "SiMongodb" },
+        { "id": "2", "language": "Express", "icon": "SiMongodb" },
+        { "id": "3", "language": "React", "icon": "SiMongodb" },
+        { "id": "4", "language": "NodeJS", "icon": "SiMongodb" }
       ]
     },
     "why": {

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import { IconContext } from "react-icons";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Preloader from "./components/Preloader/Preloader";
@@ -16,8 +17,10 @@ import "./assets/css/styles.css";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Preloader />
-      <App />
+      <IconContext.Provider value={{ className: "sricons" }}>
+        <Preloader />
+        <App />
+      </IconContext.Provider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
