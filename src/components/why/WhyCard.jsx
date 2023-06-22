@@ -6,11 +6,9 @@ const ReactIcons = {
 };
 
 const WhyCard = (props) => {
-  const categoriesData = [props.post];
+  const postData = [props.post];
 
-  console.log(categoriesData);
-
-  const menuCategories = categoriesData.map((category) => {
+  const whyData = postData.map((category) => {
     const IconElement = ReactIcons[category.icon];
 
     return (
@@ -27,7 +25,7 @@ const WhyCard = (props) => {
       </div>
     );
   });
-  return <div className="art-a art-blog-card rounded">{menuCategories}</div>;
+  return <div className="art-a art-blog-card rounded">{whyData}</div>;
 };
 
 export default WhyCard;

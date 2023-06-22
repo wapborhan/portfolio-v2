@@ -2184,6 +2184,11 @@ blockquote:after {
   position: relative;
   bottom: 0;
 }
+
+.art-blog-card .art-post-description i {
+  font-size: 45px;
+}
+
 .art-blog-card:hover .art-port-cover img {
   transform: scale(1.07);
 }
