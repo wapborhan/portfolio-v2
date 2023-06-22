@@ -863,47 +863,56 @@
       "posts": [
         {
           "id": 1,
+          "icon": "SiMongodb",
           "title": "Always On Time",
           "overview": "I will delivery your project on time so that you can start your business with your previous plan."
         },
         {
           "id": 2,
+          "icon": "",
           "title": "Hard Working",
           "overview": "I am a hard working person who always works hard for his clients. So, there is no way to delay."
         },
         {
           "id": 3,
+          "icon": "",
           "title": "24/7 Availability",
           "overview": "I am here to help you always. If you are facing any kind of problem than you can contact me 24/7."
         },
         {
           "id": 4,
+          "icon": "",
           "title": "Professional Work",
           "overview": "I am a Professional Web Designer and Developer. So, I always here to design your website professionally."
         },
         {
           "id": 5,
+          "icon": "",
           "title": "Speed Optimization",
           "overview": "I wil optimize speed of your website around 90 in all page speed tools with plugins or manually."
         },
         {
           "id": 6,
+          "icon": "",
           "title": "100% Satisfaction",
           "overview": "I always take correct ions from clients before submitting project and work as a way of the most satisfaction."
         },
         {
           "id": 7,
+          "icon": "",
           "title": "After Selling Support",
           "overview": "I will provide after selling support. The support will not be paid but if there is any big issue you may charge for solution."
         },
 
         {
           "id": 8,
+          "icon": "",
           "title": "Contact form Setup",
           "overview": "I will set your contact form so that people can reach you via Email. I will use Contact form 7 or WP form."
         },
         {
           "id": 9,
+          "icon": "",
           "title": "High Security",
           "overview": "Security is one of the most important issue for a website. So, I always work carefully to protect your website properly."
         }

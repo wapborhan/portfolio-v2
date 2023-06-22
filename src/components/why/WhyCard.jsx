@@ -1,15 +1,33 @@
 import React from "react";
+import * as ReactRiIcons from "react-icons/si";
+
+const ReactIcons = {
+  ...ReactRiIcons,
+};
 
 const WhyCard = (props) => {
-  return (
-    <div className="art-a art-blog-card rounded">
-      <div className="art-post-description text-center">
-        <div className="icon mb-4">Icon</div>
-        <h5 className="mb-15">{props.post.title}</h5>
-        <div className="mb-15">{props.post.overview}</div>
+  const categoriesData = [props.post];
+
+  console.log(categoriesData);
+
+  const menuCategories = categoriesData.map((category) => {
+    const IconElement = ReactIcons[category.icon];
+
+    return (
+      <div className="content">
+        <div className="art-post-description text-center">
+          <div className="icon mb-4">
+            <i>{IconElement && <IconElement />}</i>
+          </div>
+          <h5 className="mb-15">{category.title}</h5>
+          <div className="mb-15">{category.overview}</div>
+        </div>
+
+        <h2></h2>
       </div>
-    </div>
-  );
+    );
+  });
+  return <div className="art-a art-blog-card rounded">{menuCategories}</div>;
 };
 
 export default WhyCard;
