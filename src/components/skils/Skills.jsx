@@ -11,7 +11,7 @@ const Skils = (props) => {
           <LeftSkils data={props.data.primary} />
         </div>
         <div className="col-lg-6 col-md-12">
-          <RightSkils data={props.data.secondray} />
+          <RightSkils data={props.data} />
         </div>
       </div>
     </div>

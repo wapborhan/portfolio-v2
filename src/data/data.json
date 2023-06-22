@@ -802,18 +802,57 @@
       "/images/bitmoji/sanitize.png"
     ],
     "skills": {
-      "secondray": [
-        { "id": "1", "language": "MongoDB", "icon": "SiMongodb" },
-        { "id": "2", "language": "Express", "icon": "SiMongodb" },
-        { "id": "3", "language": "React", "icon": "SiMongodb" },
-        { "id": "4", "language": "NodeJS", "icon": "SiMongodb" }
-      ],
-      "tools": [
-        { "id": "1", "language": "MongoDB", "icon": "SiMongodb" },
-        { "id": "2", "language": "Express", "icon": "SiMongodb" },
-        { "id": "3", "language": "React", "icon": "SiMongodb" },
-        { "id": "4", "language": "NodeJS", "icon": "SiMongodb" }
-      ]
+      "primary": {
+        "tittle": "Primary Skills On",
+        "category": [
+          {
+            "id": "1",
+            "language": "MongoDB",
+            "icon": "SiMongodb",
+            "class": "mongo"
+          },
+          {
+            "id": "2",
+            "language": "Express",
+            "icon": "SiExpress",
+            "class": "exprs"
+          },
+          {
+            "id": "3",
+            "language": "React",
+            "icon": "SiReact",
+            "class": "react"
+          },
+          {
+            "id": "4",
+            "language": "NodeJS",
+            "icon": "SiNodedotjs",
+            "class": "node"
+          }
+        ]
+      },
+      "secondray": {
+        "tittle": "Secondary  Skills On",
+        "category": [
+          { "id": "1", "language": "JavaScript", "icon": "SiJavascript" },
+          { "id": "2", "language": "Vue", "icon": "SiVuedotjs" },
+          { "id": "2", "language": "Wordpress", "icon": "SiWordpress" },
+          { "id": "3", "language": "PHP", "icon": "SiPhp" }
+        ]
+      },
+      "tools": {
+        "tittle": "Tools I Used",
+        "category": [
+          { "id": "1", "language": "VScode", "icon": "SiVisualstudiocode" },
+          { "id": "2", "language": "Sublime", "icon": "SiSublimetext" },
+          { "id": "3", "language": "Github", "icon": "SiGithub" },
+          { "id": "4", "language": "Git", "icon": "SiGit" },
+          { "id": "5", "language": "Terminal", "icon": "SiWindowsterminal" },
+          { "id": "6", "language": "Xampp", "icon": "SiXampp" },
+          { "id": "6", "language": "Postman", "icon": "SiPostman" },
+          { "id": "6", "language": "MongoDB Compass", "icon": "SiMongodb" }
+        ]
+      }
     },
     "why": {
       "title": "Why Me?",

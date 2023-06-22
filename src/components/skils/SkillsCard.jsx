@@ -5,7 +5,7 @@ const ReactIcons = {
   ...ReactRiIcons,
 };
 
-const RightScard = (props) => {
+const SkillsCard = (props) => {
   const categoriesData = [props.data];
 
   const menuCategories = categoriesData.map((category) => {
@@ -13,16 +13,16 @@ const RightScard = (props) => {
 
     return (
       <div className="content">
-        {IconElement && <IconElement />}
+        <i>{IconElement && <IconElement />}</i>
         <h2>{category.language}</h2>
       </div>
     );
   });
   return (
-    <div className="each" key={props.data.id}>
+    <div className={"each " + props.data.class} key={Math.random()}>
       <div className="box">{menuCategories}</div>
     </div>
   );
 };
 
-export default RightScard;
+export default SkillsCard;

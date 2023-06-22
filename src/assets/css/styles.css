@@ -2866,17 +2866,19 @@ html.is-animating .fade-left {
 .each .box {
   padding: 16px;
 }
-
-.css .box {
+.mongo .box .content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.exprs .box .content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.exprs .box {
   text-align: right;
 }
 
-.js .box {
-  margin-top: 75px;
-}
-
-.ng .box {
-  margin-top: 75px;
+.node .box {
   text-align: right;
 }
 
@@ -2900,21 +2902,37 @@ html.is-animating .fade-left {
   font-size: 30px;
   margin-bottom: 15px;
 }
-.html .box .content i {
-  margin-top: 40px;
+.mongo .box .content i {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.css .box .content i {
-  font-size: 30px;
-  margin-left: 100px;
-  margin-top: 40px;
+.mongo .box .content i,
+.exprs .box .content i,
+.react .box .content i,
+.node .box .content i {
+  font-size: 60px !important;
 }
 
-.js .box .content i {
-  margin-bottom: 20px;
+.exprs .box .content i {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
 }
 
-.ng .box .content i {
+.node .box .content i,
+.react .box .content i {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+.each.node .box .content h2,
+.each.react .box .content h2 {
+  margin-top: 20px;
+}
+.node .box .content i {
   margin-bottom: 20px;
 }
 
