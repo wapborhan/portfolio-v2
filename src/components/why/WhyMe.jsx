@@ -3,7 +3,8 @@ import SectionTitle from "../Templates/Text/SectionTitle";
 import WhyCard from "./WhyCard";
 
 const WhyMe = (props) => {
-  const whyme = props.data.posts.filter((month, idx) => idx < 3);
+  console.log(props);
+  const whyme = props.data.posts.filter((month, idx) => idx < props.length);
   return (
     <div className="container-fluid">
       <div className="row p-30-0">

@@ -5,7 +5,7 @@ export default function Footer(props) {
   const date = new Date();
   return (
     <>
-      <Logos data={props.data} />
+      {/* <Logos data={props.data} /> */}
       <div className="container-fluid">
         <footer>
           <div>&#169; {date.getFullYear()} WapBorhan</div>

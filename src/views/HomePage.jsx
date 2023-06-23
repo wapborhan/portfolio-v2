@@ -2,9 +2,6 @@ import React from "react";
 import Skills from "../components/skils/Skills";
 import Banner from "../components/Banner/Banner";
 import Counters from "../components/Counter/Counters";
-import History from "../components/History/History";
-import ProjectsSwiper from "../components/Projects/ProjectsSwiper";
-import BlogSwiper from "../components/Blog/BlogSwiper";
 import Contact from "../components/Contact/Contact";
 import WhyMe from "../components/why/WhyMe";
 
@@ -31,7 +28,7 @@ export default function HomePage(props) {
       {/* newsletter / posts */}
       {/* <BlogSwiper data={props.data.blog} /> */}
       {/* why me / posts */}
-      <WhyMe data={props.data.why} column={3} />
+      <WhyMe data={props.data.why} column={3} length={3} />
 
       {/* contact info */}
       <Contact data={props.data.contact} />

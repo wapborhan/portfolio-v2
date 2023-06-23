@@ -4,8 +4,8 @@ export default function ContactCard(props) {
   return (
     <>
       <div className="title-area">
-        <h4 className="title">{props.data.name}</h4>
-        <span>{props.data.designation}</span>
+        <h3 className="title mt-3">{props.data.name}</h3>
+        <h5 className="desc mt-2 mb-3">{props.data.designation}</h5>
       </div>
       <div className="description">
         <p>{props.data.conmsg}</p>

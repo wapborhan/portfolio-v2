@@ -17,7 +17,7 @@ export default function ContactCards(props) {
                 <iframe
                   src={props.data.maplink}
                   width="345"
-                  height="285"
+                  height="242"
                   style={{ border: "0" }}
                   allowFullScreen=""
                   loading="lazy"

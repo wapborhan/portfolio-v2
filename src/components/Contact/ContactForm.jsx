@@ -14,11 +14,22 @@ export default function ContactForm(props) {
       {/* form container */}
       <div className="art-a art-card">
         <Formik
-          initialValues={{ name: "", email: "", message: "" }}
+          initialValues={{
+            name: "",
+
+            subject: "",
+            email: "",
+            message: "",
+          }}
           // validation
           validationSchema={Yup.object({
             name: Yup.string()
               .max(35, "Must be 35 characters or less")
+              .required("Required"),
+
+            subject: Yup.string()
+              .min(10, "Must be 10 characters.")
+              .max(90, "Must be 90 characters.")
               .required("Required"),
             email: Yup.string()
               .email("Invalid email address")
@@ -33,22 +44,28 @@ export default function ContactForm(props) {
             setTimeout(() => {
               emailjs
                 .send(
-                  "service_ag8htup",
-                  "y3qexcs",
+                  "gmail_sr",
+                  "wapborhan_n499rkp",
                   {
                     name: contact.name,
+
+                    subject: contact.subject,
                     email: contact.email,
                     message: contact.message,
                   },
-                  "user_UTJTDSxq66eaS0NGyt0PQ"
+                  "VBTTWBG2H_z_yDhOK"
                 )
                 .then(
                   (result) => {
                     console.log(result.text);
+                    alert(result.text + " Your mail has been sent");
                     formButtonAnimation();
                     setTimeout(() => resetForm(), 2000);
                   },
                   (error) => {
+                    alert(
+                      `Sorry Your mail isn't sent \n Please Send Mail direct to \n borhaninfos@gmail.com`
+                    );
                     console.log(error.text);
                   }
                 );
@@ -59,48 +76,24 @@ export default function ContactForm(props) {
           {(formik) => (
             <Form id="form" className="art-contact-form">
               {/* name */}
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="art-form-field">
-                    <Field
-                      id="name"
-                      name="name"
-                      className={
-                        "art-input" + (formik.values.name ? " art-active" : "")
-                      }
-                      type="text"
-                      placeholder="Name"
-                    />
-                    <label htmlFor="name">
-                      <i className="fas fa-user"></i>
-                    </label>
-                    <div className="art-validation-warning">
-                      <span>
-                        <ErrorMessage name="name" />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="art-form-field">
-                    <Field
-                      id="phone"
-                      name="phone"
-                      className={
-                        "art-input" + (formik.values.name ? " art-active" : "")
-                      }
-                      type="text"
-                      placeholder="Phone Number"
-                    />
-                    <label htmlFor="phone">
-                      <i className="fas fa-phone"></i>
-                    </label>
-                    <div className="art-validation-warning">
-                      <span>
-                        <ErrorMessage name="phone" />
-                      </span>
-                    </div>
-                  </div>
+
+              <div className="art-form-field">
+                <Field
+                  id="name"
+                  name="name"
+                  className={
+                    "art-input" + (formik.values.name ? " art-active" : "")
+                  }
+                  type="text"
+                  placeholder="Name"
+                />
+                <label htmlFor="name">
+                  <i className="fas fa-user"></i>
+                </label>
+                <div className="art-validation-warning">
+                  <span>
+                    <ErrorMessage name="name" />
+                  </span>
                 </div>
               </div>
 
@@ -130,13 +123,13 @@ export default function ContactForm(props) {
                   id="subject"
                   name="subject"
                   className={
-                    "art-input" + (formik.values.email ? " art-active" : "")
+                    "art-input" + (formik.values.subject ? " art-active" : "")
                   }
                   type="subject"
                   placeholder="Subject"
                 />
                 <label htmlFor="subject">
-                  <i className="fas fa-at"></i>
+                  <i class="fas fa-heading"></i>
                 </label>
                 <div className="art-validation-warning">
                   <span>

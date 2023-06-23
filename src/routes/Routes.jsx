@@ -10,6 +10,7 @@ import BlogPage from "../views/BlogPage";
 import AboutPage from "../views/AboutPage";
 import ContactPage from "../views/ContactPage";
 import NotFound from "../views/NotFound";
+import WhyMe from "../components/why/WhyMe";
 
 export default function App(props) {
   return (
@@ -19,45 +20,37 @@ export default function App(props) {
         path="/projects"
         element={<ProjectsPage data={props.data.projects} />}
       />
-
       <Route
         exact
         path="/projects-2-col"
         element={<ProjectsPage data={props.data.projects} column={2} />}
       />
-
       <Route
         exact
         path="/projects-3-col"
         element={<ProjectsPage data={props.data.projects} column={3} />}
       />
-
       <Route
         exact
         path="/history"
         element={<HistoryPage data={props.data.history} />}
       />
-
       <Route
         exact
         path="/courses"
         element={<CoursePage data={props.data.courses} />}
       />
-
       <Route exact path="/blog" element={<BlogPage data={props.data.blog} />} />
-
       <Route
         exact
         path="/blog-2-col"
         element={<BlogPage data={props.data.blog} column={2} />}
       />
-
       <Route
         exact
         path="/blog-3-col"
         element={<BlogPage data={props.data.blog} column={3} />}
       />
-
       <Route
         exact
         path="/about"
@@ -68,14 +61,25 @@ export default function App(props) {
             setBackground={props.setBackground}
           />
         }
+      />{" "}
+      <Route
+        exact
+        path="/why"
+        element={
+          <WhyMe
+            data={props.data.why}
+            length={props.data.why.posts.length}
+            column={3}
+            background={props.background}
+            setBackground={props.setBackground}
+          />
+        }
       />
-
       <Route
         exact
         path="/contact"
         element={<ContactPage data={props.data.contact} />}
       />
-
       <Route
         exact
         path="/"
@@ -87,7 +91,6 @@ export default function App(props) {
           />
         }
       />
-
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
