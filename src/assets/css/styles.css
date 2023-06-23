@@ -904,18 +904,20 @@ blockquote:after {
 }
 /* ------------------------------ app marcup (after 290px) ------------------------------ */
 @media (max-width: 290px) {
-  .art-app {
-    /* ----- info bar ----- */
-  }
+  /* ----- info bar ----- */
+  /* .art-app {
+    
+  } */
   .art-app .art-info-bar {
     width: 100vw;
   }
 }
 /* ------------------------------ app marcup (after 230px) ------------------------------ */
 @media (max-width: 230px) {
-  .art-app {
-    /* ----- menu bar ----- */
-  }
+  /* ----- menu bar ----- */
+  /* .art-app {
+   
+  } */
   .art-app .art-menu-bar {
     width: 100vw;
   }
@@ -1298,11 +1300,12 @@ blockquote:after {
 }
 
 /* ------------------------------ menu bar ------------------------------ */
-.art-menu-bar {
-  /* ----- main menu  ----- */
-  /* ----- language change  ----- */
-  /* ----- current page title ----- */
-}
+/* ----- main menu  ----- */
+/* ----- language change  ----- */
+/* ----- current page title ----- */
+/* .art-menu-bar {
+ 
+} */
 .art-menu-bar nav {
   display: flex;
   align-items: center;

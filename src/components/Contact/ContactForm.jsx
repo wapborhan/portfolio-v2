@@ -1,25 +1,31 @@
-import React from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
-import emailjs from 'emailjs-com';
-import Title from '../Templates/Text/Title';
-import { formButtonAnimation } from '../../assets/js/main.js';
+import React from "react";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
+import emailjs from "emailjs-com";
+import Title from "../Templates/Text/Title";
+import { formButtonAnimation } from "../../assets/js/main.js";
 
 export default function ContactForm(props) {
   return (
-    <div className='col-lg-12'>
+    <div className="col-lg-12">
       {/* form title */}
       <Title title={props.form.title} />
 
       {/* form container */}
-      <div className='art-a art-card'>
+      <div className="art-a art-card">
         <Formik
-          initialValues={{ name: '', email: '', message: '' }}
+          initialValues={{ name: "", email: "", message: "" }}
           // validation
           validationSchema={Yup.object({
-            name: Yup.string().max(35, 'Must be 35 characters or less').required('Required'),
-            email: Yup.string().email('Invalid email address').required('Required'),
-            message: Yup.string().max(800, 'Must be 800 characters or less').required('Required'),
+            name: Yup.string()
+              .max(35, "Must be 35 characters or less")
+              .required("Required"),
+            email: Yup.string()
+              .email("Invalid email address")
+              .required("Required"),
+            message: Yup.string()
+              .max(800, "Must be 800 characters or less")
+              .required("Required"),
           })}
           // form submit
           onSubmit={(values, { setSubmitting, resetForm }) => {
@@ -27,14 +33,14 @@ export default function ContactForm(props) {
             setTimeout(() => {
               emailjs
                 .send(
-                  'service_ag8htup',
-                  'y3qexcs',
+                  "service_ag8htup",
+                  "y3qexcs",
                   {
                     name: contact.name,
                     email: contact.email,
                     message: contact.message,
                   },
-                  'user_UTJTDSxq66eaS0NGyt0PQ'
+                  "user_UTJTDSxq66eaS0NGyt0PQ"
                 )
                 .then(
                   (result) => {
@@ -51,71 +57,121 @@ export default function ContactForm(props) {
         >
           {/* form */}
           {(formik) => (
-            <Form id='form' className='art-contact-form'>
+            <Form id="form" className="art-contact-form">
               {/* name */}
-              <div className='art-form-field'>
-                <Field
-                  id='name'
-                  name='name'
-                  className={'art-input' + (formik.values.name ? ' art-active' : '')}
-                  type='text'
-                  placeholder='Name'
-                />
-                <label htmlFor='name'>
-                  <i className='fas fa-user'></i>
-                </label>
-                <div className='art-validation-warning'>
-                  <span>
-                    <ErrorMessage name='name' />
-                  </span>
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="art-form-field">
+                    <Field
+                      id="name"
+                      name="name"
+                      className={
+                        "art-input" + (formik.values.name ? " art-active" : "")
+                      }
+                      type="text"
+                      placeholder="Name"
+                    />
+                    <label htmlFor="name">
+                      <i className="fas fa-user"></i>
+                    </label>
+                    <div className="art-validation-warning">
+                      <span>
+                        <ErrorMessage name="name" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="art-form-field">
+                    <Field
+                      id="phone"
+                      name="phone"
+                      className={
+                        "art-input" + (formik.values.name ? " art-active" : "")
+                      }
+                      type="text"
+                      placeholder="Phone Number"
+                    />
+                    <label htmlFor="phone">
+                      <i className="fas fa-phone"></i>
+                    </label>
+                    <div className="art-validation-warning">
+                      <span>
+                        <ErrorMessage name="phone" />
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* email */}
-              <div className='art-form-field'>
+              <div className="art-form-field">
                 <Field
-                  id='email'
-                  name='email'
-                  className={'art-input' + (formik.values.email ? ' art-active' : '')}
-                  type='email'
-                  placeholder='Email'
+                  id="email"
+                  name="email"
+                  className={
+                    "art-input" + (formik.values.email ? " art-active" : "")
+                  }
+                  type="email"
+                  placeholder="Email"
                 />
-                <label htmlFor='email'>
-                  <i className='fas fa-at'></i>
+                <label htmlFor="email">
+                  <i className="fas fa-at"></i>
                 </label>
-                <div className='art-validation-warning'>
+                <div className="art-validation-warning">
                   <span>
-                    <ErrorMessage name='email' />
+                    <ErrorMessage name="email" />
                   </span>
                 </div>
               </div>
-
-              {/* message */}
-              <div className='art-form-field'>
+              {/* Subject */}
+              <div className="art-form-field">
                 <Field
-                  id='message'
-                  name='message'
-                  className={'art-input' + (formik.values.message ? ' art-active' : '')}
-                  placeholder='Message'
-                  as='textarea'
+                  id="subject"
+                  name="subject"
+                  className={
+                    "art-input" + (formik.values.email ? " art-active" : "")
+                  }
+                  type="subject"
+                  placeholder="Subject"
                 />
-                <label htmlFor='message'>
-                  <i className='far fa-envelope'></i>{' '}
+                <label htmlFor="subject">
+                  <i className="fas fa-at"></i>
                 </label>
-                <div className='art-validation-warning art-message-validation'>
+                <div className="art-validation-warning">
                   <span>
-                    <ErrorMessage name='message' />
+                    <ErrorMessage name="subject" />
+                  </span>
+                </div>
+              </div>
+              {/* message */}
+              <div className="art-form-field">
+                <Field
+                  id="message"
+                  name="message"
+                  className={
+                    "art-input" + (formik.values.message ? " art-active" : "")
+                  }
+                  placeholder="Message"
+                  as="textarea"
+                />
+                <label htmlFor="message">
+                  <i className="far fa-envelope"></i>{" "}
+                </label>
+                <div className="art-validation-warning art-message-validation">
+                  <span>
+                    <ErrorMessage name="message" />
                   </span>
                 </div>
               </div>
 
               {/* submit */}
-              <div className='art-submit-frame'>
-                <button className='art-btn art-btn-md art-submit' type='submit'>
+              <div className="art-submit-frame">
+                <button className="art-btn art-btn-md art-submit" type="submit">
                   <span>Send Message</span>
                 </button>
-                <div className='art-success'>
-                  Success <i className='fas fa-check'></i>
+                <div className="art-success">
+                  Success <i className="fas fa-check"></i>
                 </div>
               </div>
             </Form>

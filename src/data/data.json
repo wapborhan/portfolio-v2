@@ -643,19 +643,27 @@
     ],
 
     "contact": {
-      "title": "Contact Information",
-      "info": [
-        [
-          { "id": 10, "option": "Email", "detail": "example@mail.com" },
-          { "id": 11, "option": "Skype", "detail": "@skype" },
-          { "id": 12, "option": "Discord", "detail": "discord#1234" }
-        ],
-        [
-          { "id": 20, "option": "Mobile", "detail": "+1 234 56 78" },
-          { "id": 21, "option": "Home", "detail": "N/A" },
-          { "id": 22, "option": "Office", "detail": "N/A" }
+      "info": {
+        "title": "Contact Information",
+        "maplink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.384878338166!2d88.95830402281295!3d24.02744201588017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fea5e989a3df29%3A0xf5251011b08f158f!2z4KaP4Ka44KaG4KawIOCmrOCni-CmsOCmueCmvuCmqA!5e0!3m2!1sbn!2sbd!4v1629847093289!5m2!1sbn!2sbd",
+        "name": "Borhan Uddin",
+        "designation": "Front-End Developer",
+        "conmsg": "I am available for freelance work. Connect with me via and call in to my account.",
+        "link": [
+          {
+            "id": 0,
+            "tittle": "Whatsapp",
+            "text": "+8801620557840",
+            "url": "https://api.whatsapp.com/send?phone=8801620557840&text=Hello"
+          },
+          {
+            "id": 1,
+            "tittle": "Email",
+            "text": "borhaninfos@gmail.com",
+            "url": "mailto:borhaninfos@gmail.com"
+          }
         ]
-      ],
+      },
       "form": { "title": "Get in touch" }
     },
 
@@ -863,56 +871,56 @@
       "posts": [
         {
           "id": 1,
-          "icon": "SiMongodb",
+          "icon": "MdOutlineWatchLater",
           "title": "Always On Time",
           "overview": "I will delivery your project on time so that you can start your business with your previous plan."
         },
         {
           "id": 2,
-          "icon": "",
+          "icon": "FaLaptopCode",
           "title": "Hard Working",
           "overview": "I am a hard working person who always works hard for his clients. So, there is no way to delay."
         },
         {
           "id": 3,
-          "icon": "",
+          "icon": "FaRegCalendarAlt",
           "title": "24/7 Availability",
           "overview": "I am here to help you always. If you are facing any kind of problem than you can contact me 24/7."
         },
         {
           "id": 4,
-          "icon": "",
+          "icon": "FaAward",
           "title": "Professional Work",
           "overview": "I am a Professional Web Designer and Developer. So, I always here to design your website professionally."
         },
         {
           "id": 5,
-          "icon": "",
+          "icon": "MdSpeed",
           "title": "Speed Optimization",
           "overview": "I wil optimize speed of your website around 90 in all page speed tools with plugins or manually."
         },
         {
           "id": 6,
-          "icon": "",
+          "icon": "MdSentimentSatisfiedAlt",
           "title": "100% Satisfaction",
           "overview": "I always take correct ions from clients before submitting project and work as a way of the most satisfaction."
         },
         {
           "id": 7,
-          "icon": "",
+          "icon": "MdSupportAgent",
           "title": "After Selling Support",
           "overview": "I will provide after selling support. The support will not be paid but if there is any big issue you may charge for solution."
         },
 
         {
           "id": 8,
-          "icon": "",
+          "icon": "MdOutlineContactPage",
           "title": "Contact form Setup",
           "overview": "I will set your contact form so that people can reach you via Email. I will use Contact form 7 or WP form."
         },
         {
           "id": 9,
-          "icon": "",
+          "icon": "MdSecurity",
           "title": "High Security",
           "overview": "Security is one of the most important issue for a website. So, I always work carefully to protect your website properly."
         }

@@ -1,18 +1,34 @@
-import React from 'react';
-import ContactCardInfo from './ContactCardInfo';
+import React from "react";
+import ContactCardInfo from "./ContactCardInfo";
+import SectionTitle from "../Templates/Text/SectionTitle";
 
 export default function ContactCards(props) {
   return (
-    <div className={'col-lg-' + 12 / props.length}>
-      <div className='art-a art-card'>
-        <div className='art-table p-15-15'>
-          <ul>
-            {props.info.map((i) => (
-              <ContactCardInfo key={i.id} id={i.id} info={i} />
-            ))}
-          </ul>
+    <>
+      {" "}
+      <SectionTitle title={props.data.title} />
+      <div className={"col-lg-" + 12}>
+        {/* props.length} */}
+        <div className="art-a art-card">
+          <div className="art-table p-15-15">
+            <div className="row">
+              <div className="col-lg-12">
+                {" "}
+                <iframe
+                  src={props.data.maplink}
+                  width="345"
+                  height="285"
+                  style={{ border: "0" }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  tittle="Map"
+                ></iframe>
+              </div>
+            </div>
+            <ContactCardInfo data={props.data} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

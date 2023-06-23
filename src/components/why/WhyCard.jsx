@@ -1,8 +1,12 @@
 import React from "react";
-import * as ReactRiIcons from "react-icons/si";
+import * as ReactSiIcons from "react-icons/si";
+import * as ReactMdIcons from "react-icons/md";
+import * as ReactFaIcons from "react-icons/fa";
 
 const ReactIcons = {
-  ...ReactRiIcons,
+  ...ReactSiIcons,
+  ...ReactMdIcons,
+  ...ReactFaIcons,
 };
 
 const WhyCard = (props) => {
