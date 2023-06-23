@@ -12,7 +12,7 @@ export default function ContactCard(props) {
         <ul>
           {props.data.link.map((l) => {
             return (
-              <li>
+              <li key={l.id}>
                 <div className="deccon">
                   {l.tittle}:{" "}
                   <span>

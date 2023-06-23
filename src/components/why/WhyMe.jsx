@@ -3,7 +3,6 @@ import SectionTitle from "../Templates/Text/SectionTitle";
 import WhyCard from "./WhyCard";
 
 const WhyMe = (props) => {
-  console.log(props);
   const whyme = props.data.posts.filter((month, idx) => idx < props.length);
   return (
     <div className="container-fluid">
@@ -12,7 +11,7 @@ const WhyMe = (props) => {
 
         {/* content */}
         {whyme.map((item) => (
-          <div className={"col-lg-" + 12 / props.column}>
+          <div className={"col-md-6 col-lg-" + 12 / props.column}>
             <WhyCard key={item.id} post={item} message={props.data.message} />
           </div>
         ))}

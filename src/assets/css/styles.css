@@ -618,6 +618,13 @@ blockquote:after {
   justify-content: space-between;
   align-items: center;
 }
+.art-mobile-top-bar .logo {
+  display: flex;
+  justify-content: center;
+}
+.art-mobile-top-bar .logo img {
+  width: 60%;
+}
 .art-app .art-app-wrapper {
   max-width: 1440px;
   margin-left: auto;
@@ -814,6 +821,7 @@ blockquote:after {
   }
   .art-app .art-mobile-top-bar {
     display: flex;
+    justify-content: center;
   }
   .art-app .art-app-wrapper {
     border-radius: 0;
@@ -1676,11 +1684,11 @@ blockquote:after {
   bottom: 0;
   transition: all 0.5s;
 }
-.art-banner .art-banner-overlay .art-banner-photo:hover {
+/* .art-banner .art-banner-overlay .art-banner-photo:hover {
   transform: scale(1.15);
   transform-origin: right bottom;
   transition: transform 0.5s;
-}
+} */
 
 /* ----- typing code ----- */
 .art-code {
@@ -2047,6 +2055,10 @@ blockquote:after {
 }
 
 /* ----- contact form ----- */
+
+.ifmcontact {
+  width: 345px;
+}
 .art-form-field input,
 .art-form-field textarea {
   height: 50px;
@@ -2603,6 +2615,29 @@ footer a:hover {
 
 /* ------------------------------ content (after 920px) ------------------------------ */
 @media (max-width: 920px) {
+  .skills {
+    grid-template-columns: repeat(2, 0fr) !important;
+    width: 335px !important;
+  }
+  .each {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  .mongo .box .content i,
+  .exprs .box .content i,
+  .react .box .content i,
+  .node .box .content i {
+    font-size: 30px !important;
+  }
+  .ifmcontact {
+    width: 275px;
+  }
+  .rightskills {
+    gap: 15px !important;
+  }
+  .art-section-title {
+    margin-top: 30px;
+  }
   .art-banner .art-banner-overlay {
     padding: 60px 30px;
   }
@@ -2974,4 +3009,19 @@ html.is-animating .fade-left {
   align-items: center;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 920px) {
+  .mongo .box .content i,
+  .exprs .box .content i,
+  .react .box .content i,
+  .node .box .content i {
+    font-size: 35px !important;
+  }
+  .each.node .box .content h2,
+  .each.react .box .content h2 {
+    margin-top: 10px;
+  }
+  .node .box .content i {
+    margin-bottom: 10px;
+  }
 }

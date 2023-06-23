@@ -160,6 +160,7 @@
   ],
 
   "backgrounds": {
+    "logo": "/images/bitmoji/logo.png",
     "animated": [
       "/images/backgrounds/analysis.gif",
       "/images/backgrounds/calm.gif",
@@ -201,7 +202,7 @@
   "main": {
     "banner": {
       "heading": ["Hi this is", "Borhan Uddin."],
-      "avatar": "/images/bitmoji/side-wave.png",
+      "avatar": "/images/bitmoji/smile.png",
       "typed": [
         "Front-End Developer.",
         "Wordpress Developer.",
@@ -651,7 +652,7 @@
     "contact": {
       "info": {
         "title": "Contact Information",
-        "maplink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.384878338166!2d88.95830402281295!3d24.02744201588017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fea5e989a3df29%3A0xf5251011b08f158f!2z4KaP4Ka44KaG4KawIOCmrOCni-CmsOCmueCmvuCmqA!5e0!3m2!1sbn!2sbd!4v1629847093289!5m2!1sbn!2sbd",
+        "maplink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.96752929852!2d88.95921131729484!3d24.02764017174069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fea5e989a3df29%3A0xf5251011b08f158f!2sWapBorhan!5e1!3m2!1sen!2sbd!4v1687521211470!5m2!1sen!2sbd",
         "name": "Borhan Uddin",
         "designation": "Front-End Developer",
         "conmsg": "I am available for freelance work. Connect with me via and call in to my account.",

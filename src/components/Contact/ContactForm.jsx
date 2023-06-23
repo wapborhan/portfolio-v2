@@ -129,7 +129,7 @@ export default function ContactForm(props) {
                   placeholder="Subject"
                 />
                 <label htmlFor="subject">
-                  <i class="fas fa-heading"></i>
+                  <i className="fas fa-heading"></i>
                 </label>
                 <div className="art-validation-warning">
                   <span>

@@ -39,7 +39,12 @@ export default function App() {
 
   return (
     <div className="art-app">
-      <div className="art-mobile-top-bar"></div>
+      <div className="art-mobile-top-bar">
+        {" "}
+        <div className="logo">
+          <img src={data.backgrounds.logo} alt="Logo" />
+        </div>
+      </div>
 
       <div className="art-app-wrapper">
         <div className="art-app-container">

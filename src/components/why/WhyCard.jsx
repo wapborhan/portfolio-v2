@@ -29,7 +29,11 @@ const WhyCard = (props) => {
       </div>
     );
   });
-  return <div className="art-a art-blog-card rounded">{whyData}</div>;
+  return (
+    <div className="art-a art-blog-card rounded" key={props.post.id}>
+      {whyData}
+    </div>
+  );
 };
 
 export default WhyCard;
