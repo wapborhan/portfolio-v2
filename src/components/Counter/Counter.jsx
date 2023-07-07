@@ -8,9 +8,7 @@ export default function Counter(props) {
 
   return (
     <div
-      className={
-        "col-md-" + (12 / props.length).toString() + " col-6 col-sm-12"
-      }
+      className={"col-md-" + (12 / props.length).toString() + " col-6 col-sm-6"}
     >
       <div className="art-counter-frame">
         <div className="art-counter-box">

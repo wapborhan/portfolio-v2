@@ -97,6 +97,9 @@
   --bg-contact-1: #2d2d3a;
   --bg-contact-2: #2d2d3a;
   --bg-contact-inpt: #252532;
+
+  --bg-overly-1: #3a3a3e;
+  --bg-overly-2: #1e1e28;
 }
 html[data-theme="dark"] {
   --color-text-0: #141414;
@@ -130,8 +133,10 @@ html[data-theme="dark"] {
   --bg-contact-1: #d6d6d6;
   --bg-contact-2: #d6d6d6;
   --bg-contact-inpt: #edededed;
+  --bg-overly-1: #919191ed;
+  --bg-overly-2: #ebebeb;
 }
-html[data-theme="dark"] .art-banner .art-banner-overlay {
+/* html[data-theme="dark"] .art-banner .art-banner-overlay {
   position: relative;
   display: flex;
   padding: 60px;
@@ -142,7 +147,7 @@ html[data-theme="dark"] .art-banner .art-banner-overlay {
     rgba(176, 176, 176, 0.7) 50%,
     rgba(237, 237, 237, 0.9) 100%
   );
-}
+} */
 
 /* ------------------------------ common ------------------------------ */
 /* ----- fonts ----- */
@@ -533,11 +538,10 @@ blockquote:after {
   width: 100%;
   background-image: linear-gradient(
     180deg,
-    var(--color-gradient-1-1) 0%,
-    var(--color-gradient-1-2) 70%,
-    var(--color-gradient-1-3) 80%,
-    var(--color-gradient-1-4) 100%
+    var(--bg-overly-1) 0%,
+    var(--bg-overly-2) 100%
   );
+  /* background-image: linear-gradient(180deg, #919191ed 0, #ebebeb 100%); */
 }
 
 /* ----- preloader ----- */
