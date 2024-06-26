@@ -15,7 +15,11 @@ export default function ProjectsSwiper(props) {
     <div className="container-fluid">
       <div className="row p-30-0">
         {/* title */}
-        <SectionTitle title="Projects" />
+        <SectionTitle
+          title="Projects"
+          rightTitle={"See More"}
+          rightLink={"/Projects"}
+        />
 
         {/* project items  */}
         <div className={"col-lg-12"}>
@@ -69,7 +73,7 @@ export default function ProjectsSwiper(props) {
             {props.data.projects.map((p) => (
               <SwiperSlide
                 key={p.id}
-                className="swiper-slide art-grid art-grid-3-col art-gallery"
+                className="swiper-slide art-grid art-grid-3-col art-gallery rounded"
               >
                 <ProjectCard
                   key={p.id}

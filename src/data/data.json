@@ -39,8 +39,7 @@
       ],
       "hard": [
         { "id": "1", "skill": "Bangla", "level": 85 },
-        { "id": "2", "skill": "English", "level": 40 },
-        { "id": "3", "skill": "Hindee", "level": 70 }
+        { "id": "2", "skill": "English", "level": 40 }
       ],
       "soft": [
         "React Hooks, Redux, jQuery",
@@ -82,21 +81,21 @@
         "platform": "github",
         "favicon": "fab fa-github-square",
         "fancybox": null,
-        "url": "https://github.com/"
+        "url": "https://github.com/wapborhan"
       },
       {
         "id": 2,
         "platform": "linkedin",
         "favicon": "fab fa-linkedin",
         "fancybox": null,
-        "url": "https://www.linkedin.com/"
+        "url": "https://www.linkedin.com/in/wapborhan"
       },
       {
         "id": 3,
         "platform": "facebook social-unavailable",
         "favicon": "fab fa-facebook-square",
         "fancybox": null,
-        "url": "https://www.facebook.com/"
+        "url": "https://www.facebook.com/wapborhan"
       },
       {
         "id": 4,
@@ -110,7 +109,7 @@
         "platform": "discord social-unavailable",
         "favicon": "fab fa-discord",
         "fancybox": null,
-        "url": "https://discordapp.com/"
+        "url": "https://discordapp.com/wapborhan"
       }
     ]
   },
@@ -203,11 +202,7 @@
     "banner": {
       "heading": ["Hi this is", "Borhan Uddin."],
       "avatar": "/images/bitmoji/smile.png",
-      "typed": [
-        "Front-End Developer.",
-        "Wordpress Developer.",
-        "App Developer."
-      ],
+      "typed": ["Front-End Developer."],
 
       "button": { "text": "Explore More", "url": "/about" }
     },

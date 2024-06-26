@@ -40,7 +40,6 @@ export default function App() {
   return (
     <div className="art-app">
       <div className="art-mobile-top-bar">
-        {" "}
         <div className="logo">
           <img src={data.backgrounds.logo} alt="Logo" />
         </div>

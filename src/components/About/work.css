@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap");
+
 :root {
   --font-size: 0.8em;
   --bg1: #292931;
@@ -13,9 +14,11 @@
   --shadow1: 0 2px 4px #00000026, 0 3px 6px #0000001f;
   --shadow2: 0 2px 6px #00000044, 0 4px 7px #00000022;
 }
+
 .workprogress {
   background-color: var(--bg-contact-1);
 }
+
 ul.infoGraphic {
   font-size: var(--font-size);
   display: flex;
@@ -24,6 +27,7 @@ ul.infoGraphic {
   gap: 30px;
   padding-left: 0;
 }
+
 ul.infoGraphic li {
   position: relative;
   width: 100%;
@@ -36,9 +40,11 @@ ul.infoGraphic li {
   cursor: pointer;
   list-style: none;
 }
+
 ul.infoGraphic li .numberWrap {
   position: absolute;
 }
+
 ul.infoGraphic li .number {
   font-family: "maven pro", sans-serif;
   font-size: 13em;
@@ -46,24 +52,31 @@ ul.infoGraphic li .number {
   width: 0.9em;
   text-align: center;
 }
+
 ul.infoGraphic li .number.fontColor1 {
   color: var(--blue);
 }
+
 ul.infoGraphic li .number.fontColor2 {
   color: var(--green);
 }
+
 ul.infoGraphic li .number.fontColor3 {
   color: var(--purple);
 }
+
 ul.infoGraphic li .number.fontColor4 {
   color: var(--gold);
 }
+
 ul.infoGraphic li .number.fontColor5 {
   color: var(--red);
 }
+
 ul.infoGraphic li .number.fontColor6 {
   color: var(--orange);
 }
+
 ul.infoGraphic li .coverWrap {
   transform: rotate(130deg);
   position: absolute;
@@ -72,6 +85,7 @@ ul.infoGraphic li .coverWrap {
   left: -3em;
   top: 3em;
 }
+
 ul.infoGraphic li .coverWrap .numberCover {
   position: absolute;
   background: var(--bg-contact-1);
@@ -81,6 +95,7 @@ ul.infoGraphic li .coverWrap .numberCover {
   border-bottom: 3px solid #f5f8f7;
   transition: all 0.4s;
 }
+
 ul.infoGraphic li .coverWrap .numberCover::before {
   position: absolute;
   content: "";
@@ -92,6 +107,7 @@ ul.infoGraphic li .coverWrap .numberCover::before {
   border-radius: 100px/10px;
   z-index: -1;
 }
+
 ul.infoGraphic li .coverWrap .numberCover::after {
   position: absolute;
   bottom: 0;
@@ -102,10 +118,12 @@ ul.infoGraphic li .coverWrap .numberCover::after {
   background: radial-gradient(at bottom, #48668533, transparent, transparent);
   z-index: 1;
 }
+
 ul.infoGraphic li .content {
   margin: 8em 3em 1em 7em;
   position: relative;
 }
+
 ul.infoGraphic li .content h2 {
   font-size: 1.7em;
   font-weight: 500;
@@ -113,6 +131,7 @@ ul.infoGraphic li .content h2 {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 ul.infoGraphic li .content p {
   line-height: 1.5em;
   margin-top: 30px;
@@ -123,13 +142,14 @@ ul.infoGraphic li:hover .coverWrap .numberCover {
 }
 
 .icon {
-  position: absolute;
+  /* position: absolute; */
   font-size: 2rem;
   text-align: center;
-  top: -1.3em;
-  left: 50%;
-  transform: translatex(-50%);
+  /* top: -1.3em; */
+  /* left: 50%; */
+  /* transform: translatex(-50%); */
 }
+
 .icon:before {
   color: #666;
   font-family: FontAwesome;
@@ -201,6 +221,7 @@ body {
 .sliderBox {
   text-align: center;
 }
+
 .sliderBox .range-value {
   font-weight: 500;
   font-size: 22px;

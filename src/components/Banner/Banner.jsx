@@ -12,7 +12,7 @@ export default function Banner(props) {
           <div
             className="art-a art-banner"
             // style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + props.background.current + ')' }}
-            style={{ backgroundImage: "url(/images/backgrounds/tunnel.gif)" }}
+            style={{ backgroundImage: "url(images/backgrounds/bg.jpg)" }}
           >
             <div className="art-banner-back"></div>
             <div className="art-banner-dec"></div>
