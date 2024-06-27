@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useLocale } from "../../translate/useLocale";
 const darkMode = "darkMode";
 
 const LangBar = () => {
   const [isDark, setDark] = useState(localStorage.getItem(darkMode) === "true");
+  const [locale, setLocale] = useLocale();
   const toggleDark = () => {
     const newValue = !isDark;
     setDark(newValue);
@@ -35,11 +37,16 @@ const LangBar = () => {
       </li>
       <br />
       <br />
-      <li>
-        <a href="#.">BN</a>
+      <li
+        style={{ cursor: "pointer" }}
+        className={locale === "en" ? "art-active-lang" : ""}
+      >
+        <a onClick={() => setLocale("en")}>EN</a>
       </li>
-      <li className="art-active-lang">
-        <a href="#.">EN</a>
+      <li className={locale === "bn" ? "art-active-lang" : ""}>
+        <a style={{ cursor: "pointer" }} onClick={() => setLocale("bn")}>
+          BN
+        </a>
       </li>
     </ul>
   );

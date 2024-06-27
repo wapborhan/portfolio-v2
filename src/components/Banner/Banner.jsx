@@ -1,9 +1,12 @@
 import React from "react";
 import Code from "./Code";
 import { NavLink } from "react-router-dom";
-import { rng } from "../../assets/js/main.js";
+// import { rng } from "../../assets/js/main.js";
+import { useTranslation } from "react-i18next";
 
 export default function Banner(props) {
+  const { t } = useTranslation();
+
   return (
     <div className="container-fluid">
       <div className="row p-60-0 p-lg-30-0 p-md-15-0">
@@ -20,13 +23,16 @@ export default function Banner(props) {
               <div className="art-banner-title">
                 {/* title */}
                 <h1 className="mb-15">
-                  {props.data.heading.map((h) => (
+                  <div> {t("main.banner.heading.0")}</div>
+                  <div> {t("main.banner.heading.1")}</div>
+                  {/* {props.data.heading.map((h) => (
                     <div key={h}>{h}</div>
-                  ))}
+                  ))} */}
                 </h1>
 
                 {/* typed text */}
-                <Code typed={props.data.typed} />
+                {/* <Code typed={props.data.typed} /> */}
+                <Code typed={t("main.banner.typed", { returnObjects: true })} />
 
                 {/* button */}
                 <div className="art-buttons-frame">
@@ -38,22 +44,11 @@ export default function Banner(props) {
                   <NavLink
                     className="art-btn art-btn-md btn-v2"
                     to={props.data.button.url}
-                    // onClick={() => {
-                    //   // to not get the same image, compare it to the index
-                    //   // if they are the same, randomize it again until its not the same
-                    //   let i;
-                    //   do {
-                    //     i = rng(0, props.background.total - 1);
-                    //   } while (i === props.background.index);
-                    //   // change background after the new image index is different
-                    //   props.setBackground({
-                    //     ...props.background,
-                    //     current: props.background.all[i],
-                    //     index: i
-                    //   });
-                    // }}
                   >
-                    <span>{props.data.button.text}</span>
+                    <span>
+                      {t("main.banner.button.text")}
+                      {/* {props.data.button.text} */}
+                    </span>
                   </NavLink>
                 </div>
               </div>

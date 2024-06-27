@@ -13,6 +13,7 @@ import "./assets/css/plugins/font-awesome.min.css";
 // stylesheets
 import "./assets/css/colors/yellow.css";
 import "./assets/css/styles.css";
+import "./translate/i18n";
 
 ReactDOM.render(
   <React.StrictMode>

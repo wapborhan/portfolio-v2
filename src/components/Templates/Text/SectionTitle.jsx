@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function SectionTitle(props) {
   return (
@@ -10,7 +11,9 @@ export default function SectionTitle(props) {
 
         {props.rightTitle && (
           <div className="art-right-frame">
-            <div className={props.rightClass}>{props.rightTitle}</div>
+            <NavLink to={props.rightLink}>
+              <div className={props.rightClass}>{props.rightTitle}</div>
+            </NavLink>
           </div>
         )}
       </div>

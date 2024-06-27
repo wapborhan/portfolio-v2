@@ -1,15 +1,15 @@
 import React from "react";
-import SwiperCore, { Navigation, Pagination, A11y, Autoplay } from "swiper";
+import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "../Templates/Text/SectionTitle";
 import SwiperNavigation from "../Templates/Swiper/SwiperNavigation";
-
+// A11y  Autoplay
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, A11y]);
+SwiperCore.use([Navigation, Pagination]);
 
 export default function ProjectsSwiper(props) {
-  SwiperCore.use([Autoplay]); // start autoplay
+  // SwiperCore.use([Autoplay]); // start autoplay
 
   return (
     <div className="container-fluid">

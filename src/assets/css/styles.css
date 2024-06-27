@@ -1,4 +1,12 @@
-/* ----------------------------- Author: Nazar Miller ----------------------------- */
+@charset "UTF-8";
+
+/* ----- fonts ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+/* ----------------------------- Author: Borhan Uddin ----------------------------- */
 /*-
 1. common
       - fonts
@@ -157,15 +165,12 @@ html[data-theme="dark"] {
 } */
 
 /* ------------------------------ common ------------------------------ */
-/* ----- fonts ----- */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* ----- text defaults ----- */
 body {
   color: var(--color-text-1);
   font-size: 12px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Hind Siliguri", sans-serif;
   font-weight: 300;
   letter-spacing: 0.5px;
   font-smooth: subpixel-antialiased;
@@ -181,7 +186,7 @@ h6 {
   font-weight: 700;
   color: var(--color-text-0);
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Hind Siliguri", sans-serif;
 }
 
 h1 {
@@ -1736,7 +1741,7 @@ blockquote:after {
 
 /* ----- typing code ----- */
 .art-code {
-  font-family: "Courier Prime", monospace;
+  font-family: "Courier Prime", "Hind Siliguri", monospace;
   color: var(--color-primary-0);
   text-shadow: 1px 1px 5px var(--color-primary-1);
 }
