@@ -12,11 +12,11 @@ const ReactIcons = {
 const WhyCard = (props) => {
   const postData = [props.post];
 
-  const whyData = postData.map((category) => {
+  const whyData = postData.map((category, idx) => {
     const IconElement = ReactIcons[category.icon];
 
     return (
-      <div className="content">
+      <div className="content" key={idx}>
         <div className="art-post-description text-center">
           <div className="icon mb-4">
             <i>{IconElement && <IconElement />}</i>

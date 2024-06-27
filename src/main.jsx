@@ -1,9 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { IconContext } from "react-icons";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+// import reportWebVitals from "./reportWebVitals";
 import Preloader from "./components/Preloader/Preloader";
 // fancybox
 import "./assets/css/fancybox.min.css";
@@ -15,19 +14,12 @@ import "./assets/css/colors/yellow.css";
 import "./assets/css/styles.css";
 import "./translate/i18n";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <IconContext.Provider value={{ className: "sricons" }}>
-        <Preloader />
-        <App />
-      </IconContext.Provider>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root")
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <IconContext.Provider value={{ className: "sricons" }}>
+      <Preloader />
+      <App />
+    </IconContext.Provider>
+  </BrowserRouter>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();

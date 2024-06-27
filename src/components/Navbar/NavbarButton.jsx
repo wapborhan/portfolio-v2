@@ -10,6 +10,7 @@ export default function MenuBarHeader(props) {
             ? "art-menu-bar-btn art-active"
             : "art-menu-bar-btn"
         }
+        style={{ cursor: "pointer" }}
         onClick={() => {
           props.sidebarActive && props.setSidebarActive(false);
           props.setNavbarActive(!props.navbarActive);

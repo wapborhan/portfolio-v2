@@ -2,6 +2,8 @@ import anime from "animejs/lib/anime.es.js";
 import SmoothScrollbar from "smooth-scrollbar";
 import OverscrollPlugin from "smooth-scrollbar/plugins/overscroll";
 import ProgressBar from "progressbar.js";
+// import "@fancyapps/ui/dist/fancybox.css";
+
 // var ProgressBar = require('progressbar.js');
 
 // x. preloader
@@ -192,7 +194,7 @@ export {
   transition,
   // scrollbar
   scrollbarInit,
-  // fancybox
+  // fancybox,
   // progressbars
   progressbarCircle,
   progressbarLine,

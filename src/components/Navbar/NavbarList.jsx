@@ -1,4 +1,3 @@
-import React from "react";
 import NavbarListItem from "./NavbarListItem";
 import LangBar from "./LangBar";
 

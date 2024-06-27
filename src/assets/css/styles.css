@@ -1572,6 +1572,8 @@ blockquote:after {
       var(--color-gradient-2-1) 0%,
       var(--color-gradient-2-2) 100%);
   padding: 30px 26px;
+
+  /* padding: 20px 27px 50px; */
   margin: 0;
 }
 
@@ -1684,8 +1686,11 @@ blockquote:after {
   display: flex;
   padding: 60px;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(45, 45, 58, 0.9)), color-stop(50%, rgba(45, 45, 58, 0.7)), to(rgba(43, 43, 53, 0.7)));
-  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%);
+  /* background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(45, 45, 58, 0.9)), color-stop(50%, rgba(45, 45, 58, 0.7)), to(rgba(43, 43, 53, 0.7))); */
+  background-image: linear-gradient(90deg,
+      var(--center-top-background-1) 15%,
+      /* rgba(45, 45, 58, 0.7) 50%, */
+      var(--center-top-background-2) 100%);
 }
 
 .art-banner .art-banner-overlay.art-side-overlay {

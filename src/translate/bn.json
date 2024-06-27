@@ -115,26 +115,26 @@
   },
 
   "navbar": [
-    { "id": 0, "title": "Home", "subMenu": false, "path": "/" },
+    { "id": 0, "title": "নীরপাতা", "subMenu": false, "path": "/" },
 
     {
       "id": 1,
-      "title": "Projects",
+      "title": "প্রোজেক্ট",
       "path": "/Projects"
     },
     {
       "id": 4,
-      "title": "Why Me",
+      "title": "কেন আমি",
       "path": "/why"
     },
 
     {
       "id": 4,
-      "title": "Blog",
+      "title": "ব্লগ",
       "path": "/blog-3-col"
     },
 
-    { "id": 6, "title": "Contact", "subMenu": false, "path": "/contact" }
+    { "id": 6, "title": "যোগাযোগ", "subMenu": false, "path": "/contact" }
   ],
 
   "routes": [

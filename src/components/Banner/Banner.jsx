@@ -1,4 +1,3 @@
-import React from "react";
 import Code from "./Code";
 import { NavLink } from "react-router-dom";
 // import { rng } from "../../assets/js/main.js";

@@ -10,8 +10,8 @@ const WhyMe = (props) => {
         <SectionTitle title={props.data.title} />
 
         {/* content */}
-        {whyme.map((item) => (
-          <div className={"col-md-6 col-lg-" + 12 / props.column}>
+        {whyme.map((item, idx) => (
+          <div className={"col-md-6 col-lg-" + 12 / props.column} key={idx}>
             <WhyCard key={item.id} post={item} message={props.data.message} />
           </div>
         ))}

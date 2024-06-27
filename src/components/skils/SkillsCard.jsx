@@ -1,4 +1,5 @@
 import React from "react";
+import { IoLogoDropbox } from "react-icons/io5";
 import * as ReactRiIcons from "react-icons/si";
 
 const ReactIcons = {
@@ -8,11 +9,11 @@ const ReactIcons = {
 const SkillsCard = (props) => {
   const categoriesData = [props.data];
 
-  const menuCategories = categoriesData.map((category) => {
+  const menuCategories = categoriesData.map((category, idx) => {
     const IconElement = ReactIcons[category.icon];
 
     return (
-      <div className="content">
+      <div className="content" key={IoLogoDropbox}>
         <i>{IconElement && <IconElement />}</i>
         <h2>{category.language}</h2>
       </div>
