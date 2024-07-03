@@ -1,7 +1,8 @@
-import React from "react";
-import Logos from "./Logos/Logos";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-export default function Footer(props) {
+export default function Footer() {
+  const { t } = useTranslation();
   const date = new Date();
   return (
     <>
@@ -9,17 +10,21 @@ export default function Footer(props) {
       <div className="container-fluid">
         <footer>
           <div>
-            &#169; {date.getFullYear()} All rights reserved by{" "}
-            <a target="_blank" href="https://wapborhan.com">
-              WapBorhan
-            </a>{" "}
-            | Version: 2.0
+            &#169; {date.getFullYear()} {t("footer.text")}{" "}
+            <Link target="_blank" to="/">
+              {t("footer.siteName")}
+            </Link>{" "}
+            | {t("footer.version")}
           </div>
           <div>
-            Developed by{" "}
-            <a className="text-underline" href="https://srdreamlab.com">
-              SR Dream Lab
-            </a>
+            {t("footer.devText")}{" "}
+            <Link
+              className="text-underline"
+              target="__BLANK"
+              to={t("footer.devLink")}
+            >
+              {t("footer.devName")}
+            </Link>
           </div>
         </footer>
       </div>

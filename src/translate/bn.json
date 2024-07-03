@@ -3,7 +3,7 @@
     "profile": {
       "name": "বোরহান উদ্দিন",
       "designation": "ফ্রন্ট-এন্ড ডেভেলপার।",
-      "company": "এসআর ড্রিম ল্যাব",
+      "company": "SR Dream Lab",
       "companylink": "http://www.srdreamlab.com",
       "available": true,
       "avatar": "/images/bitmoji/wb-logo.png"
@@ -32,25 +32,45 @@
 
     "skills": {
       "languages": [
-        { "id": "1", "language": "MongoDB", "level": 40 },
-        { "id": "2", "language": "Express", "level": 50 },
-        { "id": "3", "language": "React", "level": 65 },
-        { "id": "4", "language": "NodeJS", "level": 20 }
+        {
+          "id": "1",
+          "language": "MongoDB",
+          "level": 40,
+          "icon": "SiMongodb",
+          "class": "mongo"
+        },
+        {
+          "id": "2",
+          "language": "Express",
+          "level": 50,
+          "icon": "SiExpress",
+          "class": "exprs"
+        },
+        {
+          "id": "3",
+          "language": "React",
+          "level": 65,
+          "icon": "SiReact",
+          "class": "react"
+        },
+        {
+          "id": "4",
+          "language": "NodeJS",
+          "level": 20,
+          "icon": "SiNodedotjs",
+          "class": "node"
+        }
       ],
       "hard": [
-        { "id": "1", "skill": "Bangla", "level": 85 },
-        { "id": "2", "skill": "English", "level": 40 }
+        { "id": "1", "skill": "বাংলা", "level": 99 },
+        { "id": "2", "skill": "ইংরেজি", "level": 40 }
       ],
       "soft": [
-        "React Hooks, Redux, jQuery",
-        "MySQL, MongoDB, PostgresSQL",
-        "Bootstrap, Material UI, Semantic UI, Wordpress",
-        "Express, EJS, Mongoose, Passport",
-        "Git, GitHub",
-        "Bash, Zsh",
-        "Java, C, C++",
-        "Unreal Engine, 3Ds Max",
-        "Photoshop, Sony VEGAS, Excel"
+        "React Hooks, Redux, ",
+        "MySQL, MongoDB, ",
+        "Bootstrap, Material UI,",
+        "Git, GitHub, Gitlab",
+        "Bash, Zsh"
       ]
     },
 
@@ -102,7 +122,7 @@
         "platform": "snapchat",
         "favicon": "fab fa-snapchat-square",
         "fancybox": "snapchat",
-        "url": "/images/bitmoji/snapchat.png"
+        "url": "https://discordapp.com/wapborhan"
       },
       {
         "id": 5,
@@ -645,27 +665,27 @@
 
     "contact": {
       "info": {
-        "title": "Contact Information",
+        "title": "যোগাযোগের তথ্য",
         "maplink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.96752929852!2d88.95921131729484!3d24.02764017174069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fea5e989a3df29%3A0xf5251011b08f158f!2sWapBorhan!5e1!3m2!1sen!2sbd!4v1687521211470!5m2!1sen!2sbd",
-        "name": "Borhan Uddin",
-        "designation": "Front-End Developer",
-        "conmsg": "I am available for freelance work. Connect with me via and call in to my account.",
+        "name": "বোরহান উদ্দিন",
+        "designation": "ফ্রন্ট-এন্ড ডেভেলপার",
+        "conmsg": "আমি ফ্রিল্যান্স কাজের জন্য প্রস্তুত, এর মাধ্যমে আমার সাথে সংযোগ করুন এবং আমার অ্যাকাউন্টে কল করুন।",
         "link": [
           {
             "id": 0,
-            "tittle": "Whatsapp",
+            "tittle": "হোয়াটসঅ্যাপ",
             "text": "+8801620557840",
             "url": "https://api.whatsapp.com/send?phone=8801620557840&text=Hello"
           },
           {
             "id": 1,
-            "tittle": "Email",
+            "tittle": "ইমেল",
             "text": "borhaninfos@gmail.com",
             "url": "mailto:borhaninfos@gmail.com"
           }
         ]
       },
-      "form": { "title": "Get in touch" }
+      "form": { "title": "যোগাযোগ করুন" }
     },
 
     "blog": {
@@ -818,50 +838,55 @@
       "secondray": {
         "tittle": "মাধ্যমিক দক্ষতা",
         "category": [
-          { "id": "1", "language": "জাভাস্ক্রিপ্ট", "icon": "SiJavascript" },
-          { "id": "2", "language": "Vue", "icon": "SiVuedotjs" },
+          { "id": "1", "language": "JavaScript", "icon": "SiJavascript" },
+          { "id": "2", "language": "TypeScript", "icon": "SiTypescript" },
           { "id": "2", "language": "Wordpress", "icon": "SiWordpress" },
           { "id": "3", "language": "PHP", "icon": "SiPhp" }
         ]
       },
       "tools": {
-        "tittle": "Tools I Used",
+        "tittle": "আমি ব্যবহার করা টুল",
         "category": [
           { "id": "1", "language": "VScode", "icon": "SiVisualstudiocode" },
-          { "id": "2", "language": "Sublime", "icon": "SiSublimetext" },
-          { "id": "3", "language": "Github", "icon": "SiGithub" },
-          { "id": "4", "language": "Git", "icon": "SiGit" },
-          { "id": "5", "language": "Terminal", "icon": "SiWindowsterminal" },
-          { "id": "6", "language": "Xampp", "icon": "SiXampp" },
-          { "id": "6", "language": "Postman", "icon": "SiPostman" },
-          { "id": "6", "language": "MongoDB Compass", "icon": "SiMongodb" }
+          { "id": "2", "language": "Git", "icon": "SiGit" },
+          { "id": "3", "language": "Postman", "icon": "SiPostman" },
+          { "id": "4", "language": "MongoDB Compass", "icon": "SiMongodb" }
+        ]
+      },
+      "css": {
+        "tittle": "সিএসএস লাইব্রেরি",
+        "category": [
+          { "id": "1", "language": "Tailwind", "icon": "SiTailwindcss" },
+          { "id": "2", "language": "Bootstrap", "icon": "SiBootstrap" },
+          { "id": "3", "language": "Mui", "icon": "SiMui" },
+          { "id": "4", "language": "DaisyUI", "icon": "SiDaisyui" }
         ]
       }
     },
     "why": {
-      "title": "Why Me?",
+      "title": "আমাকে কেন?",
       "righttitle": {
-        "text": "Explore More",
+        "text": "আরো দেখুন",
         "link": "/why"
       },
       "posts": [
         {
           "id": 1,
           "icon": "MdOutlineWatchLater",
-          "title": "Always On Time",
-          "overview": "I will delivery your project on time so that you can start your business with your previous plan."
+          "title": "সবসময় সময় সঠিক সময়ে",
+          "overview": "আমি সময়মতো আপনার প্রজেক্ট ডেলিভারি করব যাতে আপনি আপনার আগের প্ল্যান দিয়ে আপনার ব্যবসা শুরু করতে পারেন।"
         },
         {
           "id": 2,
           "icon": "FaLaptopCode",
-          "title": "Hard Working",
-          "overview": "I am a hard working person who always works hard for his clients. So, there is no way to delay."
+          "title": "কঠোর পরিশ্রমী",
+          "overview": "আমি একজন কঠোর পরিশ্রমী ব্যক্তি সবসময় আমার ক্লায়েন্টদের জন্য কঠোর পরিশ্রম করে থাকি। তাই দেরি করার কোন উপায় নেই।"
         },
         {
           "id": 3,
           "icon": "FaRegCalendarAlt",
-          "title": "24/7 Availability",
-          "overview": "I am here to help you always. If you are facing any kind of problem than you can contact me 24/7."
+          "title": "24/7 উপস্থিতি",
+          "overview": "আমি সবসময় আপনাকে সাহায্য করতে প্রস্তুত আছি। আপনি যদি কোন ধরণের সমস্যার সম্মুখীন হন তবে আপনি আমার সাথে 24/7 যোগাযোগ করতে পারেন।"
         },
         {
           "id": 4,
@@ -902,5 +927,13 @@
         }
       ]
     }
+  },
+  "footer": {
+    "text": "সমস্ত অধিকার সংরক্ষিত",
+    "siteName": "WapBorhan",
+    "version": "সংস্করণ: 2.0",
+    "devText": "নির্মাণে",
+    "devName": "SR Dream Lab",
+    "devLink": "https://www.srdreamlab.com"
   }
 }

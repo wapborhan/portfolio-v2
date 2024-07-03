@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
 import SmoothScrollbar from "smooth-scrollbar";
 import { Scrollbar } from "smooth-scrollbar-react";
 // bg
@@ -10,17 +9,18 @@ import InfoBar from "./components/Sidebar/InfoBar";
 import Navbar from "./components/Navbar/Navbar";
 // middle
 import Footer from "./components/Footer";
-import Routes from "./routes/Routes";
-// data
-import data from "./data/data.json";
+// import Routes from "./routes/Routes";
 // js
 import { rng, transition, scrollbarInit } from "./assets/js/main.js";
-
-let i = rng(0, data.backgrounds.static.length - 1);
+import { useTranslation } from "react-i18next";
 
 // TODO: <Scrollbar> is component t, need to fix warning regarding it
 
 export default function App() {
+  const { t } = useTranslation();
+
+  let i = rng(0, t("backgrounds", { returnObjects: true }).static.length - 1);
+
   useEffect(scrollbarInit, []);
   useEffect(transition, [window.location.pathname]);
 
@@ -32,9 +32,9 @@ export default function App() {
 
   // current background image (gets a local image link/path)
   const [background, setBackground] = useState({
-    all: data.backgrounds.static,
-    total: data.backgrounds.static.length,
-    current: data.backgrounds.static[i],
+    all: t("backgrounds", { returnObjects: true }).static,
+    total: t("backgrounds", { returnObjects: true }).static.length,
+    current: t("backgrounds", { returnObjects: true }).static[i],
     index: i,
   });
 
@@ -42,14 +42,14 @@ export default function App() {
     <div className="art-app">
       <div className="art-mobile-top-bar">
         <div className="logo">
-          <img src={data.backgrounds.logo} alt="Logo" />
+          <img src={t("backgrounds.logo")} alt="WB" />
         </div>
       </div>
 
       <div className="art-app-wrapper">
         <div className="art-app-container">
           <InfoBar
-            data={data.sidebar}
+            data={t("sidebar", { returnObjects: true })}
             navbarActive={navbarActive}
             setNavbarActive={setNavbarActive}
             sidebarActive={sidebarActive}
@@ -102,7 +102,7 @@ export default function App() {
                     /> */}
                     <Outlet />
                     {/* footer */}
-                    <Footer data={data.main.logos} />
+                    <Footer />
                   </div>
                 </div>
               </Scrollbar>
@@ -110,7 +110,7 @@ export default function App() {
           </div>
 
           <Navbar
-            data={data.navbar}
+            data={t("navbar", { returnObjects: true })}
             navbarActive={navbarActive}
             setNavbarActive={setNavbarActive}
             sidebarActive={sidebarActive}

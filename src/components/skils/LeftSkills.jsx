@@ -19,7 +19,12 @@ const LeftSkills = (props) => {
 
         <div className="center">
           <div className="box">
-            <h2>MERN</h2>
+            <h2>
+              <span className="mongo">M</span>
+              <span className="exprs">E</span>
+              <span className="react">R</span>
+              <span className="node">N</span>
+            </h2>
           </div>
         </div>
       </div>

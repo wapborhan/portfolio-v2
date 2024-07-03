@@ -2,10 +2,8 @@ import { useState } from "react";
 import NavbarButton from "./NavbarButton";
 import NavbarCurrentPage from "./NavbarCurrentPage";
 import NavbarList from "./NavbarList";
-import { useTranslation } from "react-i18next";
 
 export default function ArtMenuBar(props) {
-  const { t } = useTranslation();
   // contains the current page
   const [currentPage, setCurrentPage] = useState("Home");
 
@@ -27,8 +25,7 @@ export default function ArtMenuBar(props) {
 
         <NavbarCurrentPage currentPage={currentPage} />
         <NavbarList
-          // data={props.data}
-          data={t("navbar", { returnObjects: true })}
+          data={props.data}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           setNavbarActive={props.setNavbarActive}

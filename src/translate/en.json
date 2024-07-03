@@ -32,25 +32,45 @@
 
     "skills": {
       "languages": [
-        { "id": "1", "language": "MongoDB", "level": 40 },
-        { "id": "2", "language": "Express", "level": 50 },
-        { "id": "3", "language": "React", "level": 65 },
-        { "id": "4", "language": "NodeJS", "level": 20 }
+        {
+          "id": "1",
+          "language": "MongoDB",
+          "level": 40,
+          "icon": "SiMongodb",
+          "class": "mongo"
+        },
+        {
+          "id": "2",
+          "language": "Express",
+          "level": 50,
+          "icon": "SiExpress",
+          "class": "exprs"
+        },
+        {
+          "id": "3",
+          "language": "React",
+          "level": 65,
+          "icon": "SiReact",
+          "class": "react"
+        },
+        {
+          "id": "4",
+          "language": "NodeJS",
+          "level": 20,
+          "icon": "SiNodedotjs",
+          "class": "node"
+        }
       ],
       "hard": [
-        { "id": "1", "skill": "Bangla", "level": 85 },
+        { "id": "1", "skill": "Bangla", "level": 99 },
         { "id": "2", "skill": "English", "level": 40 }
       ],
       "soft": [
-        "React Hooks, Redux, jQuery",
-        "MySQL, MongoDB, PostgresSQL",
-        "Bootstrap, Material UI, Semantic UI, Wordpress",
-        "Express, EJS, Mongoose, Passport",
-        "Git, GitHub",
-        "Bash, Zsh",
-        "Java, C, C++",
-        "Unreal Engine, 3Ds Max",
-        "Photoshop, Sony VEGAS, Excel"
+        "React Hooks, Redux, ",
+        "MySQL, MongoDB, ",
+        "Bootstrap, Material UI,",
+        "Git, GitHub, Gitlab",
+        "Bash, Zsh"
       ]
     },
 
@@ -819,29 +839,34 @@
         "tittle": "Secondary  Skills On",
         "category": [
           { "id": "1", "language": "JavaScript", "icon": "SiJavascript" },
-          { "id": "2", "language": "Vue", "icon": "SiVuedotjs" },
-          { "id": "2", "language": "Wordpress", "icon": "SiWordpress" },
-          { "id": "3", "language": "PHP", "icon": "SiPhp" }
+          { "id": "2", "language": "TypeScript", "icon": "SiTypescript" },
+          { "id": "3", "language": "NextJS", "icon": "SiNextdotjs" },
+          { "id": "4", "language": "Wordpress", "icon": "SiWordpress" }
         ]
       },
       "tools": {
         "tittle": "Tools I Used",
         "category": [
           { "id": "1", "language": "VScode", "icon": "SiVisualstudiocode" },
-          { "id": "2", "language": "Sublime", "icon": "SiSublimetext" },
-          { "id": "3", "language": "Github", "icon": "SiGithub" },
           { "id": "4", "language": "Git", "icon": "SiGit" },
-          { "id": "5", "language": "Terminal", "icon": "SiWindowsterminal" },
-          { "id": "6", "language": "Xampp", "icon": "SiXampp" },
           { "id": "6", "language": "Postman", "icon": "SiPostman" },
           { "id": "6", "language": "MongoDB Compass", "icon": "SiMongodb" }
+        ]
+      },
+      "css": {
+        "tittle": "CSS Library",
+        "category": [
+          { "id": "1", "language": "Tailwind", "icon": "SiTailwindcss" },
+          { "id": "2", "language": "Bootstrap", "icon": "SiBootstrap" },
+          { "id": "3", "language": "Mui", "icon": "SiMui" },
+          { "id": "3", "language": "DaisyUI", "icon": "SiDaisyui" }
         ]
       }
     },
     "why": {
       "title": "Why Me?",
       "righttitle": {
-        "text": "Explore More",
+        "text": "See More",
         "link": "/why"
       },
       "posts": [
@@ -902,5 +927,13 @@
         }
       ]
     }
+  },
+  "footer": {
+    "text": "All rights reserved by",
+    "siteName": "WapBorhan",
+    "version": "Version: 2.0",
+    "devText": "Developed by",
+    "devName": "SR Dream Lab",
+    "devLink": "https://www.srdreamlab.com"
   }
 }

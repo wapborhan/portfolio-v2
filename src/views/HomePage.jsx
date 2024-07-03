@@ -26,7 +26,9 @@ export default function HomePage(props) {
       // data={data?.main?.skills}
       />
       {/* projects */}
-      <ProjectsSwiper data={data?.main?.projects} />
+      <ProjectsSwiper
+      //  data={data?.main?.projects}
+      />
 
       {/* education history */}
       {/* <History data={props.data.history} /> */}
@@ -34,7 +36,12 @@ export default function HomePage(props) {
       {/* newsletter / posts */}
       {/* <BlogSwiper data={props.data.blog} /> */}
       {/* why me / posts */}
-      <WhyMe data={data?.main?.why} column={3} length={3} />
+      <WhyMe
+        // data={data?.main?.why}
+
+        column={3}
+        length={3}
+      />
 
       {/* contact info */}
       <Contact data={data?.main?.contact} />

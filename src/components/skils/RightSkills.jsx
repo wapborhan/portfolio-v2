@@ -21,6 +21,14 @@ const RightSkils = (props) => {
           })}
         </div>
       </>
+      <>
+        <SectionTitle title={props.data.css.tittle} />
+        <div className="rightskills">
+          {props.data.css.category.map((s) => {
+            return <SkillsCard key={Math.random()} data={s} />;
+          })}
+        </div>
+      </>
     </Fragment>
   );
 };
