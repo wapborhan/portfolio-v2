@@ -208,15 +208,15 @@
     },
 
     "counters": [
-      { "id": 1, "number": 2, "text": "Years Experience", "properties": "+" },
-      { "id": 2, "number": 3, "text": "Certificates", "properties": "" },
+      { "id": 1, "number": 2, "text": "বছরের অভিজ্ঞতা", "properties": "+" },
+      { "id": 2, "number": 3, "text": "সার্টিফিকেট", "properties": "" },
       {
         "id": 3,
         "number": 25,
-        "text": "Completed Projects",
+        "text": "সমাপ্ত প্রকল্প",
         "properties": "+"
       },
-      { "id": 4, "number": 10, "text": "Happy Customers ", "properties": "+" }
+      { "id": 4, "number": 10, "text": "খুশি গ্রাহক", "properties": "+" }
     ],
 
     "history": [
@@ -280,6 +280,7 @@
     ],
 
     "projects": {
+      "name": "প্রোজেক্ট",
       "filter": [
         { "id": 0, "category": "All Categories", "dataFilter": null },
         { "id": 1, "category": "React", "dataFilter": "react" },
@@ -786,7 +787,7 @@
     ],
     "skills": {
       "primary": {
-        "tittle": "Primary Skills On",
+        "tittle": "প্রাথমিক দক্ষতা",
         "category": [
           {
             "id": "1",
@@ -815,9 +816,9 @@
         ]
       },
       "secondray": {
-        "tittle": "Secondary  Skills On",
+        "tittle": "মাধ্যমিক দক্ষতা",
         "category": [
-          { "id": "1", "language": "JavaScript", "icon": "SiJavascript" },
+          { "id": "1", "language": "জাভাস্ক্রিপ্ট", "icon": "SiJavascript" },
           { "id": "2", "language": "Vue", "icon": "SiVuedotjs" },
           { "id": "2", "language": "Wordpress", "icon": "SiWordpress" },
           { "id": "3", "language": "PHP", "icon": "SiPhp" }

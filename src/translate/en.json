@@ -280,6 +280,7 @@
     ],
 
     "projects": {
+      "name": "Projects",
       "filter": [
         { "id": 0, "category": "All Categories", "dataFilter": null },
         { "id": 1, "category": "React", "dataFilter": "react" },

@@ -1,4 +1,3 @@
-import React from "react";
 //import counterAnimation from './counterAnimation.js';
 import CountUp from "react-countup";
 

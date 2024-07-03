@@ -1,14 +1,15 @@
-import React from "react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "./ProjectCard";
 import SectionTitle from "../Templates/Text/SectionTitle";
 import SwiperNavigation from "../Templates/Swiper/SwiperNavigation";
+import { useTranslation } from "react-i18next";
 // A11y  Autoplay
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination]);
 
-export default function ProjectsSwiper(props) {
+export default function ProjectsSwiper() {
+  const { t } = useTranslation();
   // SwiperCore.use([Autoplay]); // start autoplay
 
   return (
@@ -16,7 +17,7 @@ export default function ProjectsSwiper(props) {
       <div className="row p-30-0">
         {/* title */}
         <SectionTitle
-          title="Projects"
+          title={t("main.projects.name")}
           rightTitle={"See More"}
           rightLink={"/Projects"}
         />
@@ -70,7 +71,7 @@ export default function ProjectsSwiper(props) {
               clickable: true,
             }}
           >
-            {props.data.projects.map((p) => (
+            {t("main.projects.projects", { returnObjects: true }).map((p) => (
               <SwiperSlide
                 key={p.id}
                 className="swiper-slide art-grid art-grid-3-col art-gallery rounded"

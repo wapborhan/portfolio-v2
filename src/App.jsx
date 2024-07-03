@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
+import { Outlet, Link } from "react-router-dom";
 import SmoothScrollbar from "smooth-scrollbar";
 import { Scrollbar } from "smooth-scrollbar-react";
 // bg
@@ -94,12 +95,12 @@ export default function App() {
                 >
                   <div className="scroll-content">
                     {/* routes */}
-                    <Routes
+                    {/* <Routes
                       data={data.main}
                       background={background}
                       setBackground={setBackground}
-                    />
-
+                    /> */}
+                    <Outlet />
                     {/* footer */}
                     <Footer data={data.main.logos} />
                   </div>

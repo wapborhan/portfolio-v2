@@ -1,9 +1,8 @@
 import Code from "./Code";
 import { NavLink } from "react-router-dom";
-// import { rng } from "../../assets/js/main.js";
 import { useTranslation } from "react-i18next";
 
-export default function Banner(props) {
+export default function Banner() {
   const { t } = useTranslation();
 
   return (
@@ -13,7 +12,6 @@ export default function Banner(props) {
           {/* background image */}
           <div
             className="art-a art-banner"
-            // style={{ backgroundImage: 'url(' + process.env.PUBLIC_URL + props.background.current + ')' }}
             style={{ backgroundImage: "url(images/backgrounds/bg.jpg)" }}
           >
             <div className="art-banner-back"></div>
@@ -24,37 +22,24 @@ export default function Banner(props) {
                 <h1 className="mb-15">
                   <div> {t("main.banner.heading.0")}</div>
                   <div> {t("main.banner.heading.1")}</div>
-                  {/* {props.data.heading.map((h) => (
-                    <div key={h}>{h}</div>
-                  ))} */}
                 </h1>
 
                 {/* typed text */}
                 {/* <Code typed={props.data.typed} /> */}
                 <Code typed={t("main.banner.typed", { returnObjects: true })} />
 
-                {/* button */}
                 <div className="art-buttons-frame">
-                  {/* button v1 (an actual button) */}
-                  {/* <a href={props.data.button.url} className='art-btn art-btn-md'>
-                    <span>{props.data.button.text}</span>
-                  </a> */}
-                  {/* button v2 (a div with onclick) */}
                   <NavLink
                     className="art-btn art-btn-md btn-v2"
-                    to={props.data.button.url}
+                    to={t("main.banner.button.url")}
                   >
-                    <span>
-                      {t("main.banner.button.text")}
-                      {/* {props.data.button.text} */}
-                    </span>
+                    <span>{t("main.banner.button.text")}</span>
                   </NavLink>
                 </div>
               </div>
               {/* avatar */}
               <img
-                // src={process.env.PUBLIC_URL + props.data.avatar}
-                src={props.data.avatar}
+                src={t("main.banner.avatar")}
                 className="art-banner-photo"
                 alt="Banner Profile"
               ></img>

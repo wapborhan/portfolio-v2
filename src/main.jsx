@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
 import { IconContext } from "react-icons";
 import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
@@ -13,13 +13,13 @@ import "./assets/css/plugins/font-awesome.min.css";
 import "./assets/css/colors/yellow.css";
 import "./assets/css/styles.css";
 import "./translate/i18n";
+import router from "./routes/Routes";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <IconContext.Provider value={{ className: "sricons" }}>
-      <Preloader />
-      <App />
-    </IconContext.Provider>
-  </BrowserRouter>
+  <IconContext.Provider value={{ className: "sricons" }}>
+    <Preloader />
+    {/* <App /> */}
+    <RouterProvider router={router} />
+  </IconContext.Provider>
 );
 // reportWebVitals();
