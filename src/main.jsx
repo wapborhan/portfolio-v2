@@ -4,7 +4,8 @@ import { IconContext } from "react-icons";
 // import reportWebVitals from "./reportWebVitals";
 import Preloader from "./components/Preloader/Preloader";
 // fancybox
-import "./assets/css/fancybox.min.css";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/css";
 import "./assets/css/plugins/font-awesome.min.css";

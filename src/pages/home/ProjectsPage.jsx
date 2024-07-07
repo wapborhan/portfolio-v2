@@ -1,4 +1,4 @@
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import ProjectsGrid from "../../components/Projects/ProjectsGrid";
 import { useTranslation } from "react-i18next";
 

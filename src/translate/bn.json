@@ -880,7 +880,7 @@
           { "id": "1", "language": "VScode", "icon": "SiVisualstudiocode" },
           { "id": "2", "language": "Git", "icon": "SiGit" },
           { "id": "3", "language": "Postman", "icon": "SiPostman" },
-          { "id": "4", "language": "MongoDB Compass", "icon": "SiMongodb" }
+          { "id": "4", "language": "Compass", "icon": "SiMongodb" }
         ]
       },
       "css": {

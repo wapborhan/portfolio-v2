@@ -1,20 +1,23 @@
+import Fancybox from "../Templates/Fancybox/Fancybox";
+
 export default function ProjectCard(props) {
   return (
     <div className={"art-grid-item" + (props.class || "")}>
       {/* project image */}
-      <a
-        data-fancybox="projects"
-        // href={process.env.PUBLIC_URL + props.project.images[0]}
-        href={props.project.images[0]}
-        className={"art-a art-portfolio-item-frame art-square"}
-      >
-        {/* <img src={process.env.PUBLIC_URL + props.project.images[0]} alt='item'></img> */}
-        <img src={props.project.images[0]} alt="item"></img>
-        <span className="art-item-hover">
-          <i className="fas fa-expand"></i>
-        </span>
-      </a>
-
+      <Fancybox>
+        <a
+          data-fancybox="projects"
+          // href={process.env.PUBLIC_URL + props.project.images[0]}
+          href={props.project.images[0]}
+          className={"art-a art-portfolio-item-frame art-square"}
+        >
+          {/* <img src={process.env.PUBLIC_URL + props.project.images[0]} alt='item'></img> */}
+          <img src={props.project.images[0]} alt="item"></img>
+          <span className="art-item-hover">
+            <i className="fas fa-expand"></i>
+          </span>
+        </a>
+      </Fancybox>
       {/* project description */}
       <div className="art-item-description">
         {/* title */}

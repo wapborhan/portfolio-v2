@@ -332,6 +332,7 @@
       "filter": [
         { "id": 0, "category": "All Categories", "dataFilter": null },
         { "id": 1, "category": "React", "dataFilter": "react" },
+        { "id": 1, "category": "Mern", "dataFilter": "mern" },
         { "id": 2, "category": "Javascript", "dataFilter": "javascript" },
         { "id": 3, "category": "Landing Page", "dataFilter": "landingpage" }
       ],
@@ -340,7 +341,7 @@
         {
           "id": 1,
           "filters": "react",
-          "url": "https://quranicjibon.netlify.app/",
+          "url": "https://quranicjibon.vercel.app/",
           "title": "Quranic Jibon",
           "tags": ["React"],
           "images": [
@@ -878,7 +879,7 @@
           { "id": "1", "language": "VScode", "icon": "SiVisualstudiocode" },
           { "id": "4", "language": "Git", "icon": "SiGit" },
           { "id": "6", "language": "Postman", "icon": "SiPostman" },
-          { "id": "6", "language": "MongoDB Compass", "icon": "SiMongodb" }
+          { "id": "6", "language": "Compass", "icon": "SiMongodb" }
         ]
       },
       "css": {

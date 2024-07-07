@@ -2173,6 +2173,8 @@ blockquote:after {
   width: 345px;
 }
 
+
+
 .art-form-field input,
 .art-form-field textarea {
   height: 50px;
@@ -2804,7 +2806,7 @@ footer a:hover {
     width: 335px !important;
   }
 
-  .each {
+  .skills .each {
     height: 150px !important;
     width: 150px !important;
   }
@@ -2901,6 +2903,12 @@ footer a:hover {
     width: 100%;
   }
 
+  .project-page .art-grid.art-grid-3-col .art-grid-item {
+    width: 50%;
+  }
+
+
+
   .art-grid.art-grid-3-col .art-grid-item {
     width: 100%;
   }
@@ -2924,8 +2932,74 @@ footer a:hover {
   }
 }
 
+.mongo .box .content i,
+.exprs .box .content i {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.node .box .content i,
+.react .box .content i {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+@media (max-width: 320px) {
+  .ifmcontact {
+    width: 235px;
+  }
+}
+
+@media (max-width: 425px) {
+  .ifmcontact {
+    width: 335px;
+  }
+}
+
 /* ------------------------------ content (after 500px) ------------------------------ */
 @media (max-width: 500px) {
+  .rightskills .each {
+    width: 45%;
+  }
+
+  .skills {
+    width: 100% !important;
+  }
+
+  .skills .each {
+    height: 120px !important;
+    width: 120px !important;
+  }
+
+  .skills .center {
+    height: 120px !important;
+    width: 120px !important;
+  }
+
+  .skills .each .box .content h2 {
+    font-size: 15px;
+  }
+
+  .mongo .box .content i,
+  .exprs .box .content i,
+  .react .box .content i,
+  .node .box .content i {
+    font-size: 25px !important;
+  }
+
+  .exprs .box .content i,
+  .mongo .box .content i {
+    margin-top: 10px;
+  }
+
+  .node .box .content i,
+  .react .box .content i {
+
+    margin-top: 20px;
+  }
+
   .art-section-title {
     flex-direction: column;
   }
@@ -2939,6 +3013,10 @@ footer a:hover {
     width: 100%;
   }
 
+  .project-page .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+
   .art-grid.art-grid-3-col .art-grid-item {
     width: 100%;
   }
@@ -2948,7 +3026,7 @@ footer a:hover {
   }
 
   .art-counter-frame .art-counter-box {
-    min-width: 30px;
+    min-width: 50px;
   }
 }
 
@@ -3097,7 +3175,7 @@ html.is-animating .fade-left {
   margin-bottom: 20px;
 }
 
-.each {
+.skills .each {
   background: var(--art-app-wrapper);
   box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
     inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
@@ -3119,8 +3197,8 @@ html.is-animating .fade-left {
     -5px -5px 11px var(--color-box-shadow-1),
     inset 0px 0px 2px rgba(255, 255, 255, 0.2);
   transition: box-shadow 0.2s ease-in-out;
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 21%;
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   border: 3px solid var(--color-text-shadow-1);
@@ -3204,11 +3282,7 @@ i.node {
   color: var(--color-primary-0);
 }
 
-.mongo .box .content i {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
+
 
 .mongo .box .content i,
 .exprs .box .content i,
@@ -3217,19 +3291,9 @@ i.node {
   font-size: 60px !important;
 }
 
-.exprs .box .content i {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  display: flex;
-}
 
-.node .box .content i,
-.react .box .content i {
-  display: flex;
-  justify-content: center;
-  margin-top: 45px;
-}
+
+
 
 .each.node .box .content h2,
 .each.react .box .content h2 {

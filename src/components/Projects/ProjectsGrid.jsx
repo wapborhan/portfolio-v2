@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectsFilter from "./ProjectsFilter";
 

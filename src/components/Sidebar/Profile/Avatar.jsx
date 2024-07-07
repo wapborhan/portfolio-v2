@@ -1,18 +1,22 @@
+import Fancybox from "../../Templates/Fancybox/Fancybox";
+
 export default function Avatar(props) {
   return (
     //avatar
     <div className="art-avatar">
       {/* <a data-fancybox='avatar' href={process.env.PUBLIC_URL + props.image} className='art-avatar-curtain'> */}
 
-      <a
-        data-fancybox="avatar"
-        href={props.image}
-        className="art-avatar-curtain"
-      >
-        {/* <img src={process.env.PUBLIC_URL + props.image} alt='Avatar' /> */}
-        <img src={props.image} alt="Avatar" />
-        <i className="fas fa-expand"></i>
-      </a>
+      <Fancybox>
+        <a
+          data-fancybox="avatar"
+          href={props.image}
+          className="art-avatar-curtain"
+        >
+          {/* <img src={process.env.PUBLIC_URL + props.image} alt='Avatar' /> */}
+          <img src={props.image} alt="Avatar" />
+          <i className="fas fa-expand"></i>
+        </a>
+      </Fancybox>
       {/* availability */}
       {/* change class 'art-not-available' if not available */}
       <div
