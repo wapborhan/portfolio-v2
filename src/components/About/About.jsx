@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitle from "../Templates/Text/SectionTitle";
 import WorkProgress from "./WorkProgress";
 

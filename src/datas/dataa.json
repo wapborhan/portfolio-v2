@@ -131,7 +131,7 @@
     {
       "id": 4,
       "title": "Blog",
-      "path": "/blog-3-col"
+      "path": "/blog"
     },
 
     { "id": 6, "title": "Contact", "subMenu": false, "path": "/contact" }
@@ -154,7 +154,7 @@
     { "id": 3, "title": "History", "path": "/history", "properties": "" },
     { "id": 4, "title": "Why Me", "path": "/why", "properties": "" },
     { "id": 5, "title": "Blog", "path": "/blog-2-col", "properties": "2" },
-    { "id": 6, "title": "Blog", "path": "/blog-3-col", "properties": "3" },
+    { "id": 6, "title": "Blog", "path": "/blog", "properties": "3" },
     { "id": 7, "title": "Contact", "path": "/contact", "properties": "" }
   ],
 

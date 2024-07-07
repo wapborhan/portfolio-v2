@@ -1,6 +1,8 @@
-import React from 'react';
-import BlogGrid from '../components/Blog/BlogGrid';
+import React from "react";
+import BlogGrid from "../components/Blog/BlogGrid";
+import { useTranslation } from "react-i18next";
 
-export default function BlogPage(props) {
-  return <BlogGrid data={props.data} column={props.column || 3} />;
+export default function BlogPage() {
+  const { t } = useTranslation();
+  return <BlogGrid data={t("main.blog")} column={3} />;
 }

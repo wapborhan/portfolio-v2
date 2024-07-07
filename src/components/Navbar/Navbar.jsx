@@ -7,8 +7,6 @@ export default function ArtMenuBar(props) {
   // contains the current page
   const [currentPage, setCurrentPage] = useState("Home");
 
-  console.log(props);
-
   return (
     <div
       className={

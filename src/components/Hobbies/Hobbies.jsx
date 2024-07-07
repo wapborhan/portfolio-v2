@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitle from "../Templates/Text/SectionTitle";
 import HobbiesCard from "./HobbiesCard";
 import SwiperNavigation from "../Templates/Swiper/SwiperNavigation";

@@ -10,7 +10,7 @@ export default function BlogGrid(props) {
     <div className="container-fluid">
       <div className="row p-30-0">
         {/* heading */}
-        <SectionTitle title={props.data.title} />
+        {/* <SectionTitle title={props.data.title} /> */}
 
         {/* content */}
 

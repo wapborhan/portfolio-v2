@@ -6,8 +6,6 @@ export default function ProjectsGrid(props) {
   // state for storing the filter keyword, with an initial value of null, which means no filter is applied
   const [currentFilter, setCurrentFilter] = useState(null);
 
-  console.log(props.data);
-
   return (
     <div className="container-fluid project-page">
       <div className="row p-30-0">

@@ -5,7 +5,6 @@ import WhyCard from "./WhyCard";
 const WhyMe = (props) => {
   const { t } = useTranslation();
 
-  console.log(t("main.why"));
   const whyme = t("main.why.posts", { returnObjects: true }).filter(
     (month, idx) => idx < props.length
   );

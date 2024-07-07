@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: "why",
-        element: <WhyMe />,
+        element: <WhyMe column={3} length={12} />,
       },
       {
         path: "blog",

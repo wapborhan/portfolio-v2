@@ -62,8 +62,10 @@
         }
       ],
       "hard": [
-        { "id": "1", "skill": "বাংলা", "level": 99 },
-        { "id": "2", "skill": "ইংরেজি", "level": 40 }
+        { "id": "1", "skill": "JavaScript", "level": 99 },
+        { "id": "2", "skill": "TypeScript", "level": 40 },
+        { "id": "3", "skill": "NextJS", "level": 40 },
+        { "id": "4", "skill": "Wordpress", "level": 40 }
       ],
       "soft": [
         "React Hooks, Redux, ",
@@ -151,7 +153,7 @@
     {
       "id": 4,
       "title": "ব্লগ",
-      "path": "/blog-3-col"
+      "path": "/blog"
     },
 
     { "id": 6, "title": "যোগাযোগ", "subMenu": false, "path": "/contact" }
@@ -174,7 +176,7 @@
     { "id": 3, "title": "History", "path": "/history", "properties": "" },
     { "id": 4, "title": "Why Me", "path": "/why", "properties": "" },
     { "id": 5, "title": "Blog", "path": "/blog-2-col", "properties": "2" },
-    { "id": 6, "title": "Blog", "path": "/blog-3-col", "properties": "3" },
+    { "id": 6, "title": "Blog", "path": "/blog", "properties": "3" },
     { "id": 7, "title": "Contact", "path": "/contact", "properties": "" }
   ],
 
@@ -840,8 +842,8 @@
         "category": [
           { "id": "1", "language": "JavaScript", "icon": "SiJavascript" },
           { "id": "2", "language": "TypeScript", "icon": "SiTypescript" },
-          { "id": "2", "language": "Wordpress", "icon": "SiWordpress" },
-          { "id": "3", "language": "PHP", "icon": "SiPhp" }
+          { "id": "3", "language": "NextJS", "icon": "SiNextdotjs" },
+          { "id": "4", "language": "Wordpress", "icon": "SiWordpress" }
         ]
       },
       "tools": {

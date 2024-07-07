@@ -5,7 +5,7 @@ export default function HobbiesCard(props) {
 
   useEffect(() => {
     const isDark = localStorage.getItem("darkMode");
-    console.log(isDark);
+    // console.log(isDark);
     if (!isDark) {
       const values = props.image;
       setImage(values);

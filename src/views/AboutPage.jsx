@@ -1,12 +1,13 @@
-import React from 'react';
-import About from '../components/About/About';
-import Hobbies from '../components/Hobbies/Hobbies';
+import { useTranslation } from "react-i18next";
+import About from "../components/About/About";
+import Hobbies from "../components/Hobbies/Hobbies";
 
-export default function AboutPage(props) {
+export default function AboutPage() {
+  const { t } = useTranslation();
   return (
     <>
-      <About background={props.background} />
-      <Hobbies data={props.data} />
+      <About />
+      <Hobbies data={t("main.hobbies", { returnObjects: true })} />
     </>
   );
 }
