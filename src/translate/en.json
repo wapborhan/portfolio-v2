@@ -135,7 +135,33 @@
       }
     ]
   },
+  "dashnavbar": [
+    { "id": 0, "title": "Dashboard", "subMenu": false, "path": "/dashboard" },
 
+    {
+      "id": 1,
+      "title": "Sidebar",
+      "subMenu": [
+        {
+          "id": 4,
+          "title": "Profile",
+          "path": "sidebar/profile"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Main",
+      "subMenu": [
+        {
+          "id": 4,
+          "title": "Banner",
+          "path": "main/banner"
+        }
+      ]
+    },
+    { "id": 6, "title": "Contact", "subMenu": false, "path": "/contact" }
+  ],
   "navbar": [
     { "id": 0, "title": "Home", "subMenu": false, "path": "/" },
 

@@ -1,22 +1,20 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import { Routes, Route, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+// Layout
+import RootLayout from "../layout/RootLayout";
+import DashLayout from "../layout/DashLayout";
 // pages
-import HomePage from "../views/HomePage";
-import ProjectsPage from "../views/ProjectsPage";
-import HistoryPage from "../views/HistoryPage";
-import CoursePage from "../views/CoursePage";
-import BlogPage from "../views/BlogPage";
-import AboutPage from "../views/AboutPage";
-import ContactPage from "../views/ContactPage";
-import NotFound from "../views/NotFound";
+import HomePage from "../pages/home/HomePage";
+import ProjectsPage from "../pages/home/ProjectsPage";
+import BlogPage from "../pages/home/BlogPage";
+import AboutPage from "../pages/home/AboutPage";
+import ContactPage from "../pages/home/ContactPage";
+import NotFound from "../pages/home/NotFound";
 import WhyMe from "../components/why/WhyMe";
-import App from "../App";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <RootLayout />,
     children: [
       {
         path: "/",
@@ -43,6 +41,24 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
     ],
+  },
+  {
+    path: "/dashboard",
+    element: <DashLayout />,
+    children: [
+      {
+        path: "",
+        element: "Hello",
+      },
+      {
+        path: "sidebar/profile",
+        element: "sidebar/profile",
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

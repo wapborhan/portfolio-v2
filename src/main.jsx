@@ -1,7 +1,6 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import { IconContext } from "react-icons";
-import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
 import Preloader from "./components/Preloader/Preloader";
 // fancybox
@@ -18,7 +17,6 @@ import router from "./routes/Routes";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <IconContext.Provider value={{ className: "sricons" }}>
     <Preloader />
-    {/* <App /> */}
     <RouterProvider router={router} />
   </IconContext.Provider>
 );

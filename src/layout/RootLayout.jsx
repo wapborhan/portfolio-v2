@@ -3,20 +3,20 @@ import { Outlet } from "react-router-dom";
 import SmoothScrollbar from "smooth-scrollbar";
 import { Scrollbar } from "smooth-scrollbar-react";
 // bg
-import Background from "./components/Background";
+import Background from "../components/Background.jsx";
 // side panels
-import InfoBar from "./components/Sidebar/InfoBar";
-import Navbar from "./components/Navbar/Navbar";
+import InfoBar from "../components/Sidebar/InfoBar.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
 // middle
-import Footer from "./components/Footer";
+import Footer from "../components/Footer.jsx";
 // import Routes from "./routes/Routes";
 // js
-import { rng, transition, scrollbarInit } from "./assets/js/main.js";
+import { rng, transition, scrollbarInit } from "../assets/js/main.js";
 import { useTranslation } from "react-i18next";
 
 // TODO: <Scrollbar> is component t, need to fix warning regarding it
 
-export default function App() {
+export default function RootLayout() {
   const { t } = useTranslation();
 
   let i = rng(0, t("backgrounds", { returnObjects: true }).static.length - 1);

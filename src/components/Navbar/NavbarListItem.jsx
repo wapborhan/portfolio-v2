@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function NavbarListItem(props) {
   // used to open/close submenu
   // clicking on the main list item will change the active state (toggle it on/off)
   const [active, setActive] = useState(false);
+
+  console.log(props);
 
   if (props.item.subMenu) {
     return (

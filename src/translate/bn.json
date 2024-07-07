@@ -135,7 +135,35 @@
       }
     ]
   },
+  "dashnavbar": [
+    { "id": 0, "title": "Home", "subMenu": false, "path": "/" },
 
+    {
+      "id": 1,
+      "subMenu": [
+        {
+          "id": 4,
+          "subtitle": "Why Me",
+          "path": "/why"
+        }
+      ],
+      "title": "Projects",
+      "path": "/Projects"
+    },
+    {
+      "id": 4,
+      "title": "Why Me",
+      "path": "/why"
+    },
+
+    {
+      "id": 4,
+      "title": "Blog",
+      "path": "/blog"
+    },
+
+    { "id": 6, "title": "Contact", "subMenu": false, "path": "/contact" }
+  ],
   "navbar": [
     { "id": 0, "title": "নীরপাতা", "subMenu": false, "path": "/" },
 
