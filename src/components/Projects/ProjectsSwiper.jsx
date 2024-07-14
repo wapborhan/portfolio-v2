@@ -27,6 +27,7 @@ export default function ProjectsSwiper() {
           <Swiper
             spaceBetween={30}
             slidesPerView={3}
+            loop={true}
             speed={900}
             autoplay={{ delay: 3000 }}
             breakpoints={{

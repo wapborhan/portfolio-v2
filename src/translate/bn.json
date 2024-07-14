@@ -148,7 +148,7 @@
         }
       ],
       "title": "Projects",
-      "path": "/Projects"
+      "path": "/projects"
     },
     {
       "id": 4,
@@ -170,7 +170,7 @@
     {
       "id": 1,
       "title": "প্রোজেক্ট",
-      "path": "/Projects"
+      "path": "/projects"
     },
     {
       "id": 4,
@@ -330,119 +330,62 @@
     ],
 
     "projects": {
-      "name": "প্রোজেক্ট",
+      "name": "Projects",
       "filter": [
         { "id": 0, "category": "All Categories", "dataFilter": null },
         { "id": 1, "category": "React", "dataFilter": "react" },
-        { "id": 2, "category": "Javascript", "dataFilter": "javascript" },
-        { "id": 3, "category": "Landing Page", "dataFilter": "landingpage" }
+        { "id": 1, "category": "Mern", "dataFilter": "mern" },
+        { "id": 2, "category": "NextJS", "dataFilter": "nextjs" }
       ],
 
       "projects": [
         {
           "id": 1,
           "filters": "react",
-          "url": "https://quranicjibon.netlify.app/",
+          "url": "https://quranicjibon.vercel.app/",
           "title": "Quranic Jibon",
           "tags": ["React"],
-          "images": [
-            "/images/projects/project-1.jpg",
-            "/images/projects/todo-list_mobile.jpg"
-          ]
+          "images": "/images/projects/quranic-jibon.jpg"
         },
         {
           "id": 2,
-          "filters": ["react"],
-          "url": "https://code.wapborhan.com/github-users-react/",
-          "title": "Github User Finder",
-          "tags": ["React", "API"],
-          "images": [
-            "/images/projects/project-2.jpg",
-            "/images/projects/clock-app_2.jpg",
-            "/images/projects/clock-app_mobile_1.jpg",
-            "/images/projects/clock-app_mobile_2.jpg"
-          ]
+          "filters": ["mern"],
+          "url": "https://sr-hostel.web.app/",
+          "title": "SR Hostel",
+          "tags": ["MongoDB", "Express", "ReactJS", "NodeJS"],
+          "images": "/images/projects/sr-hostel.jpg"
         },
         {
           "id": 3,
-          "filters": ["javascript"],
-          "url": "https://code.wapborhan.com/income-expense/",
-          "title": "INCOME-EXPENSE",
-          "tags": ["HTML", "CSS", "JavaScript"],
-          "images": [
-            "/images/projects/project-3.jpg",
-            "/images/projects/pomodoro_2.jpg",
-            "/images/projects/pomodoro_mobile_1.jpg",
-            "/images/projects/pomodoro_mobile_1.jpg"
-          ]
+          "filters": ["mern"],
+          "url": "https://sr-jobs-2df84.web.app",
+          "title": "SR Jobs Portal",
+          "tags": ["MongoDB", "Express", "ReactJS", "NodeJS"],
+          "images": "/images/projects/sr-jobs.jpg"
         },
         {
           "id": 4,
-          "filters": ["landingpage", "react"],
-          "url": "https://code.wapborhan.com/mogo/",
-          "title": "Mogo",
-          "tags": ["HTML", "CSS", "JS"],
-          "images": [
-            "/images/projects/project-4.jpg",
-            "/images/projects/cooldown-timer_mobile.jpg"
-          ]
+          "filters": ["nextjs"],
+          "url": "https://devfinds.vercel.app",
+          "title": "Find Devs",
+          "tags": ["Nextjs"],
+          "images": "/images/projects/find-devs.jpg"
         },
         {
           "id": 5,
-          "filters": ["react"],
-          "url": "https://burger-builder-b6aa1.web.app/",
-          "title": "Burger Builder",
-          "tags": ["React", "Firebase", "Api"],
-          "images": [
-            "/images/projects/project-5.jpg",
-            "/images/projects/restaurant-website_2.jpg",
-            "/images/projects/restaurant-website_mobile.jpg"
-          ]
+          "filters": ["mern"],
+          "url": "https://sociallinks-25108.web.app",
+          "title": "Social Links",
+          "tags": ["MongoDB", "Express", "ReactJS", "NodeJS"],
+          "images": "/images/projects/social-links.jpg"
         },
         {
           "id": 6,
           "filters": ["react"],
-          "url": "https://restaurantz.netlify.app/",
+          "url": "https://srrestaurant.vercel.app",
           "title": "Restaurent",
           "tags": ["React", "Firebase"],
-          "images": [
-            "/images/projects/project-6.jpg",
-            "/images/projects/rock-paper-scissors_2.jpg",
-            "/images/projects/rock-paper-scissors_mobile.jpg"
-          ]
-        },
-        {
-          "id": 7,
-          "filters": ["javascript"],
-          "url": "https://code.wapborhan.com/money-count/",
-          "title": "Money Count",
-          "tags": ["HTML", "CSS", "JavaScript"],
-          "images": [
-            "/images/projects/project-7.jpg",
-            "/images/projects/ip-address-tracker_mobile.jpg"
-          ]
-        },
-        {
-          "id": 8,
-          "filters": ["react"],
-          "url": "https://code.wapborhan.com/weather-react/",
-          "title": "Weather",
-          "tags": ["React", "API"],
-          "images": [
-            "/images/projects/project-8.jpg",
-            "/images/projects/github-jobs_mobile.jpg"
-          ]
-        },
-        {
-          "id": 9,
-          "filters": ["landingpage", "react"],
-          "url": "https://code.wapborhan.com/headp/",
-          "title": "HeadP",
-          "tags": ["React"],
-          "images": [
-            "/images/projects/project-9.jpg",
-            "/images/projects/rest-countries_mobile.jpg"
-          ]
+          "images": "/images/projects/project-6.jpg"
         }
       ]
     },
