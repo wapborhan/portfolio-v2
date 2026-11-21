@@ -4,7 +4,7 @@
       "name": "Borhan Uddin",
       "designation": "Front-End Developer",
       "company": "SR Dream Lab",
-      "companylink": "http://www.srdreamlab.com",
+      "companylink": "http://srdreamlab.wapborhan.com",
       "available": true,
       "avatar": "/images/bitmoji/wb-logo.png"
     },
@@ -905,6 +905,6 @@
     "version": "Version: 2.0",
     "devText": "Developed by",
     "devName": "SR Dream Lab",
-    "devLink": "https://www.srdreamlab.com"
+    "devLink": "http://srdreamlab.wapborhan.com"
   }
 }

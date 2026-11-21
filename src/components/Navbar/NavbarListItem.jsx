@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function NavbarListItem(props) {
   // used to open/close submenu
   // clicking on the main list item will change the active state (toggle it on/off)
   const [active, setActive] = useState(false);
-
-  console.log(props);
+  const location = useLocation();
 
   if (props.item.subMenu) {
     return (
@@ -38,7 +37,6 @@ export default function NavbarListItem(props) {
     // if the current page is this list item, add a class that will highlight it
     <li className="menu-item">
       <NavLink
-        exact
         to={props.item.path}
         activeclassname="selected"
         activestyle={{
@@ -47,7 +45,7 @@ export default function NavbarListItem(props) {
         }}
         onClick={(e) => {
           // if the current link items path is the current pathname
-          if (props.item.path === window.location.pathname) {
+          if (props.item.path === location.pathname) {
             // that means were on the page that this link links to, so dont do anything
             e.preventDefault();
           }

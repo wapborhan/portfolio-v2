@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Borhan Uddin</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA fallback: redirect direct path URLs to hash URL
+      (function () {
+        var path = window.location.pathname;
+        var search = window.location.search || "";
+        var hash = window.location.hash || "";
+
+        // If hosted at <username>.github.io/<repo-name>/
+        var isGithubIo = window.location.hostname.endsWith("github.io");
+        var segments = path.split("/").filter(Boolean);
+
+        if (isGithubIo && segments.length > 0) {
+          var repo = "/" + segments[0];
+          var route = "/" + segments.slice(1).join("/");
+          window.location.replace(repo + "/#" + (route === "/" ? "" : route) + search + hash);
+        } else {
+          window.location.replace("/#" + path + search + hash);
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

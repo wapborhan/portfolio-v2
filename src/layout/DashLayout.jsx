@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import SmoothScrollbar from "smooth-scrollbar";
 import { Scrollbar } from "smooth-scrollbar-react";
 // bg
@@ -19,11 +19,12 @@ import SideNavbar from "../pages/dashboard/SideNavbar.jsx";
 
 const DashLayout = () => {
   const { t } = useTranslation();
+  const location = useLocation();
 
   let i = rng(0, t("backgrounds", { returnObjects: true }).static.length - 1);
 
   useEffect(scrollbarInit, []);
-  useEffect(transition, [window.location.pathname]);
+  useEffect(transition, [location.pathname]);
 
   // sliding for left side panel
   const [sidebarActive, setSidebarActive] = useState(false);

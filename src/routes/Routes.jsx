@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 // Layout
 import RootLayout from "../layout/RootLayout";
 import DashLayout from "../layout/DashLayout";
@@ -11,7 +11,7 @@ import ContactPage from "../pages/home/ContactPage";
 import NotFound from "../pages/home/NotFound";
 import WhyMe from "../components/why/WhyMe";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <RootLayout />,
